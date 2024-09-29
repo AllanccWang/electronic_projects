@@ -34,7 +34,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  digitalWrite(GPIO_pin,LOW);
+  digitalWrite(GPIO_pin,HIGH);
 }
 
 ```
