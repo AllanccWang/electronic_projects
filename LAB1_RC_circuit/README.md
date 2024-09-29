@@ -17,3 +17,20 @@ Implement a RC circuit with LED light to check if it works
 
 # Wiring
 <img align="justify" src="practice_RC_circuit.jpg" alt="CG" style="width:75%">
+
+# Code
+```C++
+int GPIO_pin = 5;
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+  pinMode(GPIO_pin, OUTPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  digitalWrite(GPIO_pin,LOW);
+}
+
+```
