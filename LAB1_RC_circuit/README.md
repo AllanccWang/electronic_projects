@@ -1,6 +1,8 @@
 # RC circuit
 
-Implement a RC circuit with LED light to check if it works
+* Implement a RC circuit with LED light to check if it works
+* use GPIO5 as a power source
+* push switcher to see if RC circuit lights up LED
 # <img align="justify" src="RC_circuit.jpg" alt="CG" style="width:75%">
 
 # Components
