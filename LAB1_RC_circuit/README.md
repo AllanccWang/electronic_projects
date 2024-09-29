@@ -21,7 +21,7 @@ Implement a RC circuit with LED light to check if it works
 
 # Code
 * use GPIO5 as a power source
-* push switcher to see if RC circuit lights up LED
+* push switcher to see if RC circuit lights up LED, and LED light will fade as dischaging capacitor
 
 ```C++
 int GPIO_pin = 5;
