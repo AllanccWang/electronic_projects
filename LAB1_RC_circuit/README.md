@@ -11,6 +11,7 @@ Implement a RC circuit with LED light to check if it works
 * Breadboard
 * wires
 * 1 unit of 470uF capacitor
+* 1 unit of electronic switcher
 
 # Software
 * IDE: Arduino IDE
