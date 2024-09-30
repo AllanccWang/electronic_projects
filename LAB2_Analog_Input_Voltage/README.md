@@ -12,6 +12,9 @@ Use a DAC pin to read the voltage value,and check the brightness change of LED l
 * 2 unit of 220Ω
 * 1 unit of Potentiometer
 
+# Software
+* IDE: Arduino IDE
+
 # Wiring
 <img align="justify" src="practice_analog_input_voltage.jpg" alt="CG" style="width:75%">
 
