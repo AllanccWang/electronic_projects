@@ -6,7 +6,7 @@ implement the circuit with microcontroller
 
 # specs
 * Processors:
-** CPU: Xtensa dual-core (or single-core) 32-bit LX6 microprocessor, operating at 160 or 240 MHz and performing at up to 600 DMIPS
+  * CPU: Xtensa dual-core (or single-core) 32-bit LX6 microprocessor, operating at 160 or 240 MHz and performing at up to 600 DMIPS
 ** Ultra low power (ULP) co-processor
 * Memory: 520 KiB SRAM
 * Wireless connectivity:
