@@ -1,7 +1,7 @@
 # Analog Input Voltage
 
 Use a DAC pin to read the voltage value,and check the brightness change of LED light
-# <img align="justify" src="analog_input_voltage.jpg" alt="AIV" style="width:70%">
+<img align="justify" src="analog_input_voltage.jpg" alt="AIV" style="width:70%">
 
 # Components
 * ESP32 WeMos LOLIN D32
@@ -12,9 +12,12 @@ Use a DAC pin to read the voltage value,and check the brightness change of LED l
 * 2 unit of 220Ω
 * 1 unit of Potentiometer
 
+# Wiring
+<img align="justify" src="practice_analog_input_voltage.jpg" alt="CG" style="width:75%">
+
 # Code
 * use GPIO5 as a power source
-* push switcher to see if RC circuit lights up LED, and LED light will fade as capacitor discharging
+* analogRead function to read binary code
 
 ```C++
 int GPIO_pin = 5; //GPIO5 as voltage source
@@ -37,6 +40,7 @@ void loop() {
 }
 /*
 Output:
+as tuning the potentiometer, the voltage changes.
 DAC value : 1.73 V
 DAC value : 1.71 V
 DAC value : 1.64 V
