@@ -18,6 +18,7 @@ Use a DAC pin to read the voltage value,and check the brightness change of LED l
 # Code
 * use GPIO5 as a power source
 * analogRead function to read binary code
+* control the potentiometer to see the voltage changing in monitor window
 
 ```C++
 int GPIO_pin = 5; //GPIO5 as voltage source
