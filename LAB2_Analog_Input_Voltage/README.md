@@ -1,7 +1,7 @@
 # Analog Input Voltage
 
 Use a DAC pin to read the voltage value,and check the brightness change of LED light
-# <img align="justify" src="LAB2_Analog_Input_Voltage/analog_input_voltage.jpg" alt="AIV" style="width:80%">
+# <img align="justify" src="analog_input_voltage.jpg" alt="AIV" style="width:70%">
 
 # Components
 * ESP32 WeMos LOLIN D32
