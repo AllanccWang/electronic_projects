@@ -10,7 +10,10 @@ use 4 different color LEDs to display the binary representation of number from 0
 * 4 unit of 220Ω
 
 # Software
-* [WOKWI Simulator](https://wokwi.com/): Arduino UNO, the [**_Binary Display with LED_**](https://wokwi.com/projects/410633547969555457)
+* [WOKWI Simulator](https://wokwi.com/) : Arduino UNO
+
+# Simulation result
+* [**_Binary Display with LED_**](https://wokwi.com/projects/410633547969555457)
 
 # Code
 ```C++
