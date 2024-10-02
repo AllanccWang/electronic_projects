@@ -12,7 +12,7 @@ use 4 different color LEDs to display the binary representation of number from 0
 # Software
 * [WOKWI Simulator](https://wokwi.com/) : Arduino UNO
 
-# Simulation result
+# Simulation
 * [**_Binary Display with LED_**](https://wokwi.com/projects/410633547969555457)
 
 # Code
