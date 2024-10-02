@@ -1,6 +1,6 @@
 # Binary Display with LED
 
-use 4 different color LEDs to display the binary representation of number from 0 to 15, which is less than 2**4 combination
+use 4 different color LEDs to display the binary representation of number from 0 to 15, less than 2^4 combination
 
 # Components
 * Arduino UNO
@@ -10,7 +10,7 @@ use 4 different color LEDs to display the binary representation of number from 0
 * 4 unit of 220Ω
 
 # Software
-* Simulator: Arduino UNO, the [**_Binary Display with LED_**](https://wokwi.com/projects/410633547969555457)
+* [WOKWI Simulator](https://wokwi.com/): Arduino UNO, the [**_Binary Display with LED_**](https://wokwi.com/projects/410633547969555457)
 
 # Code
 ```C++
