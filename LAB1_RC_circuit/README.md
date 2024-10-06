@@ -18,7 +18,7 @@ Implement a RC circuit with LED light to check if it works
 * IDE: Arduino IDE
 
 # Wiring
-<img align="justify" src="practice_RC_circuit.jpg" alt="CG1" style="width:75%">
+<img align="justify" src="practice_RC_circuit.jpg" alt="CG1" style="width:70%">
 
 # Code
 * use GPIO5 as a power source
