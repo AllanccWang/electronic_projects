@@ -1,5 +1,5 @@
 # Planck constant experiment
-in this lab, we use threshold voltage of Red LED to determine the Planck constant.[Reference](https://ncmn.unl.edu/outreach/Home_Resources/PlanckAnnotations.pdf)
+in this lab, we use threshold voltage of Red LED to determine the Planck constant. [Reference](https://ncmn.unl.edu/outreach/Home_Resources/PlanckAnnotations.pdf)
 
 <img align="justify" src="Planck_constant_measurement.jpg" alt="PlanckCM" style="width:50%">
 
@@ -18,7 +18,7 @@ in this lab, we use threshold voltage of Red LED to determine the Planck constan
 * Python module: PySerial [reference](https://www.instructables.com/Capture-Data-From-Arduino-to-CSV-File-Using-PySeri/)
 
 # Wiring
-<img align="justify" src="practice_photoresistor_switch_circuit.jpg" alt="PWS1" style="width:65%">
+<img align="justify" src="practice_Planck_constant_measurement.jpg" alt="PlanckCM1" style="width:60%">
 
 # Code
 * use GPIO5 as a power source
