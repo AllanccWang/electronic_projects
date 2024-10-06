@@ -8,7 +8,7 @@ in this lab, we use threshold voltage of Red LED to determine the Planck constan
 * USB
 * Breadboard
 * wires
-* 1 unit of LED
+* 3 unit of LED
 * 1 unit of 220Ω
 * 1 unit of 2.2kΩ
 * 1 unit of CdS photoresistor
@@ -19,13 +19,14 @@ in this lab, we use threshold voltage of Red LED to determine the Planck constan
 
 # Wiring
 after setup the circuit, using a shelter to cover the LED and photoresistor, it is used to avoid other light resource affects the reading voltage value from photoresistor
+
 <img align="justify" src="practice_Planck_constant_measurement.jpg" alt="PlanckCM1" style="width:60%">
 
-
-
 # Code
-* GPIO25 is voltage resource, and dacWrite() function is used to sweep voltage from 1.5V to 1.92V with step 0.02V
-* push switcher to see if RC circuit lights up LED, and LED light will fade as capacitor discharging
+* GPIO25 is voltage resource, and dacWrite() is used to sweep voltage from 1.5V to 1.92V with step 0.02V
+* Reading digital value on GPIO26 as indicated in circuit diagram, and it's converted into voltage.
+* Gather the data by PySerial module, and analyze the data
+* after 5-cycles voltage sweeping, it's changed to another Red LED. Total is 3 units of LED results.
 
 ```C++
 int DAC1_pin = 25; //control LED voltage
