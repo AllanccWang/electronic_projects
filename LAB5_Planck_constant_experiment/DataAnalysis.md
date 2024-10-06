@@ -20,3 +20,7 @@ all errors, $\frac{experimentValue-definedValue}{definedValue}$(%), are less tha
 <img align="justify" src="imgs/Planck_constant_measurement_img2.jpg" alt="Planckdata1" style="width:70%">
 
 From above data, the luminosity of LED1 is less then the others, it may be due to the distance or emitting angle of LED and photoresistor. It will cause the photon received on photoresistor, then affects the result.
+
+# Discussion
+* from the calculated results, all errors are less than 10%
+* the error may comes from resolution of DAC value, it's ${\color{red}\pm}$
