@@ -24,4 +24,10 @@ From above data, the luminosity of LED1 is less then the others, it may be due t
 # Discussion
 * from the calculated results, all errors are less than 10%
 * the error may comes from
-  - resolution of DAC value, it's ${pm}12mV$
+  - resolution of DAC value, the controlling the LED voltage
+  - resolution of ADC value, the reading from voltage on photoresistor
+  - sensitivity of photoresistor
+  - distance or emitting angle of LED and photoresistor
+* improvement
+  - pick up different color LED to double-check
+  - reduce setup impact factors, as distance or emitting angle of LED and photoresistor
