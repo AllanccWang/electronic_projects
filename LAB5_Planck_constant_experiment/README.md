@@ -73,8 +73,8 @@ by using a formula, E=hv=eV , it's able to calculate the h, the Planck constant.
 where E is energy, v=c/λ (v is light frequenct; c is light speed; λ is wavelength), e is electron charge, V is voltage.
 
 since it's red LED, we assume wavelength is 700nm.[(red_LED_datasheet)](LAB5_Planck_constant_experiment/RED_LED_datasheet.pdf)
-|               | Voltage (mV)  | Energy (E=eV) | Frequency     | Planck Constant (h) | error (%) |
-| ------------- | ------------- | ------------- | ------------- | ------------------- | --------- |
-| LED1          |         1660  |  $2.656x10^-19$  | Content Cell  | Content Cell        | --------- |
-| LED2          |         1640  | Content Cell  | Content Cell  | Content Cell        | --------- |
-| LED3          |         1640  | Content Cell  | Content Cell  | Content Cell        | --------- |
+|      | Voltage (mV)  | Energy (E=eV) | Frequency     | Planck Constant (h) | error (%) |
+| ---- | ------------- | ------------- | ------------- | ------------------- | --------- |
+| LED1 |   1660  | $2.656x10^(-19)$ | Content Cell  | Content Cell        | --------- |
+| LED2 |   1640  | $2.624x10^(-19)$ | Content Cell  | Content Cell        | --------- |
+| LED3 |   1640  | $2.624x10^(-19)$ | Content Cell  | Content Cell        | --------- |
