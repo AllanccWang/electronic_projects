@@ -17,5 +17,5 @@ read the resistance changing of the photoresistor and convert it into a logic hi
 * IDE: Arduino IDE
 
 # Wiring
-<img align="justify" src="practice_photoresistor_switch_circuit.jpg" alt="PWS1" style="width:70%"><img align="justify" src="practice_photoresistor_switch_circuit_1.jpg" alt="PWS2" style="width:40%">
+<img align="justify" src="practice_photoresistor_switch_circuit.jpg" alt="PWS1" style="width:70%">||<img align="justify" src="practice_photoresistor_switch_circuit_1.jpg" alt="PWS2" style="width:35%">
 Left img shows the wiring, and right img shows after decreasing luminosity on photoresistor surface, then turn on LED
