@@ -18,5 +18,5 @@ read the resistance changing of the photoresistor and convert it into a logic hi
 
 # Wiring
 <img align="justify" src="practice_photoresistor_switch_circuit.jpg" alt="PWS" style="width:70%">
-**decreasing luminosity on its sensitive surface**
+*decreasing luminosity on its sensitive surface*
 <img align="justify" src="practice_photoresistor_switch_circuit_1.jpg" alt="PWS_1" style="width:50%">
