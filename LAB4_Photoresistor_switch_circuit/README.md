@@ -18,4 +18,4 @@ read the resistance changing of the photoresistor and convert it into a logic hi
 
 # Wiring
 Left img shows the wiring, and right img shows after decreasing luminosity on photoresistor surface, then turn on LED
-<img align="justify" src="practice_photoresistor_switch_circuit.jpg" alt="PWS" style="width:60%"><img align="justify" src="practice_photoresistor_switch_circuit_1.jpg" alt="PWS_1" style="width:30%">
+<img align="justify" src="practice_photoresistor_switch_circuit.jpg" alt="PWS1" style="width:65%"><img align="justify" src="practice_photoresistor_switch_circuit_1.jpg" alt="PWS2" style="width:20%">
