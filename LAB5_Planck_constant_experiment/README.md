@@ -26,7 +26,7 @@ after setup the circuit, using a shelter to cover the LED and photoresistor, it 
 * GPIO25 is voltage resource, and dacWrite() is used to sweep voltage from 1.5V to 1.92V with step 0.02V
 * Reading digital value on GPIO26 as indicated in circuit diagram, and it's converted into voltage.
 * Gather the data by PySerial module, and analyze the data
-* after 5-cycles voltage sweeping, it's changed to another Red LED. Total is 3 units of LED results.
+* after 5-cycles voltage sweeping, it's changed to another Red LED. Total is 3 units of LED results. [(RawData)](RawSensorData.csv)
 
 ```C++
 int DAC1_pin = 25; //control LED voltage
