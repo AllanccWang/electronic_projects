@@ -17,7 +17,7 @@ since it's red LED, we assume wavelength is 700nm [(red_LED_datasheet)](LAB5_Pla
 all errors, $\frac{experimentValue-definedValue}{definedValue}$(%), are less than 10%.
 
 # Comparision of 3 units of LED
-<img align="justify" src="imgs/Planck_constant_measurement_img2.jpg" alt="Planckdata1" style="width:70%">
+<img align="justify" src="imgs/Planck_constant_measurement_img2.jpg" alt="Planckdata2" style="width:70%">
 
 From above data, the luminosity of LED1 is less then the others, it may be due to the distance or emitting angle of LED and photoresistor. It will cause the photon received on photoresistor, then affects the result.
 
