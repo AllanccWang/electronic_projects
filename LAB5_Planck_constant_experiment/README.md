@@ -18,7 +18,7 @@ in this lab, we use threshold voltage of Red LED to determine the Planck constan
 * Python module: PySerial [(Reference)](https://www.instructables.com/Capture-Data-From-Arduino-to-CSV-File-Using-PySeri/), and python code is attached [here](MCU_COMtoCSV.py).
 
 # Wiring
-after setup the circuit, using a shelter to cover the LED and photoresistor, it is used to avoid other light resource affects the reading voltage value on photoresistor
+after setup the circuit, using a shelter to cover the LED and photoresistor, it is used to avoid other light resource affects the reading value on photoresistor
 
 <img align="justify" src="imgs/practice_Planck_constant_measurement.jpg" alt="PlanckCM1" style="width:60%">
 
@@ -72,7 +72,7 @@ from the LED1 data below, we find there is a turning point as LED voltage is 166
 by using a formula, E=hv=eV , it's able to calculate the h, the Planck constant.
 where E is energy, v=c/λ (v is light frequenct; c is light speed; λ is wavelength), e is electron charge, V is voltage.
 
-since it's red LED, we assume wavelength is 700nm [(red_LED_datasheet)](LAB5_Planck_constant_experiment/RED_LED_datasheet.pdf). And Planck constant is defined as $6.626*10^{-34}$. below is the table indicates all caculated results for 3 units of red LED.
+since it's red LED, we assume wavelength is 700nm [(red_LED_datasheet)](LAB5_Planck_constant_experiment/RED_LED_datasheet.pdf). And Planck constant is defined as $6.626*10^{-34}$. below is the table manifests all caculated results for 3 units of red LED.
 
 |      | Voltage (mV) | Energy (E=eV) | Frequency (Hz) | Planck Constant (h) | error (%) |
 | ---- | ------------- | ------------- | ------------- | ------------------- | --------- |
@@ -81,3 +81,6 @@ since it's red LED, we assume wavelength is 700nm [(red_LED_datasheet)](LAB5_Pla
 | LED3 |   1640  | $2.624*10^{-19}$ | $4.285*10^{14}$ | $6.123*10^{-34}$ | 7.5% |
 
 all errors, $\frac{experimentValue-definedValue}{definedValue}$(%), are less than 10%.
+
+## Comparision of 3 units of LED
+
