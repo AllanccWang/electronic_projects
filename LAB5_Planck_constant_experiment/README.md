@@ -63,3 +63,6 @@ void loop() {
     delay(3000);
 }
 ```
+
+# Data Analysis
+from the LED1 data below, we find there is a turning point as LED voltage is 1660mV.
