@@ -1,6 +1,7 @@
 # Photoresistor Switch Circuit
 
 read the resistance changing of the photoresistor and convert it into a logic high or logic low, which turns LED on or off.
+
 <img align="justify" src="photoresistor_switch_circuit.jpg" alt="PWS" style="width:40%">
 
 # Components
