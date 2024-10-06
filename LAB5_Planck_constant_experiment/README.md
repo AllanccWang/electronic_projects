@@ -1,7 +1,7 @@
 # Planck constant experiment
 in this lab, we use threshold voltage of Red LED to determine the Planck constant. [(Reference)](https://ncmn.unl.edu/outreach/Home_Resources/PlanckAnnotations.pdf)
 
-<img align="justify" src="Planck_constant_measurement.jpg" alt="PlanckCM" style="width:50%">
+<img align="justify" src="imgs/Planck_constant_measurement.jpg" alt="PlanckCM" style="width:50%">
 
 # Components
 * ESP32 WeMos LOLIN D32
@@ -20,7 +20,7 @@ in this lab, we use threshold voltage of Red LED to determine the Planck constan
 # Wiring
 after setup the circuit, using a shelter to cover the LED and photoresistor, it is used to avoid other light resource affects the reading voltage value on photoresistor
 
-<img align="justify" src="practice_Planck_constant_measurement.jpg" alt="PlanckCM1" style="width:60%">
+<img align="justify" src="imgs/practice_Planck_constant_measurement.jpg" alt="PlanckCM1" style="width:60%">
 
 # Code
 * GPIO25 is voltage resource, and dacWrite() is used to sweep voltage from 1.5V to 1.92V with step 0.02V
@@ -67,12 +67,12 @@ void loop() {
 # Data Analysis
 from the LED1 data below, we find there is a turning point as LED voltage is 1660mV.
 
-<img align="justify" src="Planck_constant_measurement_img1.jpg" alt="Planckdata1" style="width:70%">
+<img align="justify" src="imgs/Planck_constant_measurement_img1.jpg" alt="Planckdata1" style="width:70%">
 
 by using a formula, E=hv=eV , it's able to calculate the h, the Planck constant.
 where E is energy, v=c/λ (v is light frequenct; c is light speed; λ is wavelength), e is electron charge, V is voltage.
 
-since it's red LED, we assume wavelength is 700nm.[(red_LED_datasheet)](LAB5_Planck_constant_experiment/RED_LED_datasheet)
+since it's red LED, we assume wavelength is 700nm.[(red_LED_datasheet)](LAB5_Planck_constant_experiment/RED_LED_datasheet.pdf)
 |               | Voltage (mV)  | Energy (E=eV) | Frequency     | Planck Constant (h) | error (%) |
 | ------------- | ------------- | ------------- | ------------- | ------------------- | --------- |
 | LED1          | Content Cell  | Content Cell  | Content Cell  | Content Cell        | --------- |
