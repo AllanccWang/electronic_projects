@@ -72,9 +72,9 @@ from the LED1 data below, we find there is a turning point as LED voltage is 166
 by using a formula, E=hv=eV , it's able to calculate the h, the Planck constant.
 where E is energy, v=c/λ (v is light frequenct; c is light speed; λ is wavelength), e is electron charge, V is voltage.
 
-since it's red LED, we assume wavelength is 700nm.[(red_LED_datasheet)](LAB5_Planck_constant_experiment/RED_LED_datasheet.pdf)
-|      | Voltage (mV)  | Energy (E=eV) | Frequency     | Planck Constant (h) | error (%) |
+since it's red LED, we assume wavelength is 700nm [(red_LED_datasheet)](LAB5_Planck_constant_experiment/RED_LED_datasheet.pdf). Planck constant is defined as $6.626x10^{-34}$.
+|      | Voltage (mV) | Energy (E=eV) | Frequency (Hz) | Planck Constant (h) | error (%) |
 | ---- | ------------- | ------------- | ------------- | ------------------- | --------- |
-| LED1 |   1660  | $2.656x10^{-19}$ | Content Cell  | Content Cell        | --------- |
-| LED2 |   1640  | $2.624x10^(-19)$ | Content Cell  | Content Cell        | --------- |
-| LED3 |   1640  | $2.624x10^(-19)$ | Content Cell  | Content Cell        | --------- |
+| LED1 |   1660  | $2.656x10^{-19}$ | $4.285x10^{14}$ | $6.198x10^{-34}$ | --------- |
+| LED2 |   1640  | $2.624x10^{-19}$ | $4.285x10^{14}$ | $6.123x10^{-34}$ | --------- |
+| LED3 |   1640  | $2.624x10^{-19}$ | $4.285x10^{14}$ | $6.123x10^{-34}$ | --------- |
