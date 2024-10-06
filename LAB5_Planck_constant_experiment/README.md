@@ -66,3 +66,6 @@ void loop() {
 
 # Data Analysis
 from the LED1 data below, we find there is a turning point as LED voltage is 1660mV.
+
+<img align="justify" src="Planck_constant_measurement_img1.jpg" alt="Planckdata1" style="width:70%">
+
