@@ -8,7 +8,7 @@ in this lab, we use threshold voltage of Red LED to determine the Planck constan
 * USB
 * Breadboard
 * wires
-* 3 unit of LED
+* 3 unit of red LED
 * 1 unit of 220Ω
 * 1 unit of 2.2kΩ
 * 1 unit of CdS photoresistor
@@ -18,7 +18,7 @@ in this lab, we use threshold voltage of Red LED to determine the Planck constan
 * Python module: PySerial [(Reference)](https://www.instructables.com/Capture-Data-From-Arduino-to-CSV-File-Using-PySeri/)
 
 # Wiring
-after setup the circuit, using a shelter to cover the LED and photoresistor, it is used to avoid other light resource affects the reading voltage value from photoresistor
+after setup the circuit, using a shelter to cover the LED and photoresistor, it is used to avoid other light resource affects the reading voltage value on photoresistor
 
 <img align="justify" src="practice_Planck_constant_measurement.jpg" alt="PlanckCM1" style="width:60%">
 
