@@ -16,5 +16,7 @@ since it's red LED, we assume wavelength is 700nm [(red_LED_datasheet)](LAB5_Pla
 
 all errors, $\frac{experimentValue-definedValue}{definedValue}$(%), are less than 10%.
 
-* Comparision of 3 units of LED
+# Comparision of 3 units of LED
+<img align="justify" src="imgs/Planck_constant_measurement_img2.jpg" alt="Planckdata1" style="width:70%">
+
 
