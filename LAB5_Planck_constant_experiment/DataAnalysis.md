@@ -19,4 +19,4 @@ all errors, $\frac{experimentValue-definedValue}{definedValue}$(%), are less tha
 # Comparision of 3 units of LED
 <img align="justify" src="imgs/Planck_constant_measurement_img2.jpg" alt="Planckdata1" style="width:70%">
 
-
+From above data, the luminosity of LED1 is less then the others, it may be due to the distance or emitting angle of LED and photoresistor. It will cause the photon received on photoresistor, then affects the result.
