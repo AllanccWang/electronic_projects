@@ -16,7 +16,7 @@ Use a DAC pin to read the voltage value,and check the brightness change of LED l
 * IDE: Arduino IDE
 
 # Wiring
-<img align="justify" src="practice_analog_input_voltage.jpg" alt="CG" style="width:75%">
+<img align="justify" src="practice_analog_input_voltage.jpg" alt="AIV1" style="width:75%">
 
 # Code
 * use GPIO5 as a power source
