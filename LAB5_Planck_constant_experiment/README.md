@@ -15,7 +15,7 @@ in this lab, we use threshold voltage of Red LED to determine the Planck constan
 
 # Software
 * IDE: Arduino IDE
-* Python module: PySerial [(Reference)](https://www.instructables.com/Capture-Data-From-Arduino-to-CSV-File-Using-PySeri/)
+* Python module: PySerial [(Reference)](https://www.instructables.com/Capture-Data-From-Arduino-to-CSV-File-Using-PySeri/), and python code is attached [here].
 
 # Wiring
 after setup the circuit, using a shelter to cover the LED and photoresistor, it is used to avoid other light resource affects the reading voltage value on photoresistor
