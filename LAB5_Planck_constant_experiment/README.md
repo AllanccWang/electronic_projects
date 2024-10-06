@@ -80,4 +80,4 @@ since it's red LED, we assume wavelength is 700nm [(red_LED_datasheet)](LAB5_Pla
 | LED2 |   1640  | $2.624*10^{-19}$ | $4.285*10^{14}$ | $6.123*10^{-34}$ | 7.5% |
 | LED3 |   1640  | $2.624*10^{-19}$ | $4.285*10^{14}$ | $6.123*10^{-34}$ | 7.5% |
 
-all errors, $(experiment-value-defined-value)/{defined-value}$, are less than 10%.
+all errors, $(experimentValue-definedValue)/{definedValue}$, are less than 10%.
