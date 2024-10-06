@@ -23,4 +23,5 @@ From above data, the luminosity of LED1 is less then the others, it may be due t
 
 # Discussion
 * from the calculated results, all errors are less than 10%
-* the error may comes from resolution of DAC value, it's ${\color{red}\pm}$
+* the error may comes from
+** resolution of DAC value, it's ${\color{red}\pm}$12mV
