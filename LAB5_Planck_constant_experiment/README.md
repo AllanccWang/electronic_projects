@@ -69,3 +69,12 @@ from the LED1 data below, we find there is a turning point as LED voltage is 166
 
 <img align="justify" src="Planck_constant_measurement_img1.jpg" alt="Planckdata1" style="width:70%">
 
+by using a formula, E=hv=eV , it's able to calculate the h, the Planck constant.
+where E is energy, v=c/λ (v is light frequenct; c is light speed; λ is wavelength), e is electron charge, V is voltage.
+
+since it's red LED, we assume wavelength is 700nm.[(red_LED_datasheet)]()
+|               | Voltage (mV)  | Energy (E=eV) | Frequency     | Planck Constant (h) | error (%) |
+| ------------- | ------------- | ------------- | ------------- | ------------------- | --------- |
+| LED1          | Content Cell  | Content Cell  | Content Cell  | Content Cell        | --------- |
+| LED2          | Content Cell  | Content Cell  | Content Cell  | Content Cell        | --------- |
+| LED3          | Content Cell  | Content Cell  | Content Cell  | Content Cell        | --------- |
