@@ -75,6 +75,6 @@ where E is energy, v=c/λ (v is light frequenct; c is light speed; λ is wavelen
 since it's red LED, we assume wavelength is 700nm.[(red_LED_datasheet)](LAB5_Planck_constant_experiment/RED_LED_datasheet.pdf)
 |               | Voltage (mV)  | Energy (E=eV) | Frequency     | Planck Constant (h) | error (%) |
 | ------------- | ------------- | ------------- | ------------- | ------------------- | --------- |
-| LED1          |         1660  |  $\2.656x10^(-19)$  | Content Cell  | Content Cell        | --------- |
+| LED1          |         1660  |  $2.656x10^-19$  | Content Cell  | Content Cell        | --------- |
 | LED2          |         1640  | Content Cell  | Content Cell  | Content Cell        | --------- |
 | LED3          |         1640  | Content Cell  | Content Cell  | Content Cell        | --------- |
