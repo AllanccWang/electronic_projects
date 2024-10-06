@@ -18,7 +18,10 @@ in this lab, we use threshold voltage of Red LED to determine the Planck constan
 * Python module: PySerial [(Reference)](https://www.instructables.com/Capture-Data-From-Arduino-to-CSV-File-Using-PySeri/)
 
 # Wiring
+after setup the circuit, using a shelter to cover the LED and photoresistor is used to avoid other light resource affects the reading voltage value from photoresistor
 <img align="justify" src="practice_Planck_constant_measurement.jpg" alt="PlanckCM1" style="width:60%">
+
+
 
 # Code
 * use GPIO5 as a power source
