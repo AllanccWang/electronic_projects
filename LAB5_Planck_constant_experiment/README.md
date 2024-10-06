@@ -27,6 +27,7 @@ after setup the circuit, using a shelter to cover the LED and photoresistor, it 
 * Reading digital value on GPIO26 as indicated in circuit diagram, and it's converted into voltage.
 * Gather the data by PySerial module, and analyze the data
 * after 5-cycles voltage sweeping, it's changed to another Red LED. Total is 3 units of LED results. [(RawData)](RawSensorData.csv)
+* generate the experiment report and discussion [here](DataAnalysis.md)
 
 ```C++
 int DAC1_pin = 25; //control LED voltage
