@@ -6,7 +6,7 @@ In this practice, we build a simple real time oscilloscope. We take a simple LED
 
 the waveform plot
 
-<img align="justify" src="Real_Time_Oscilloscope_img.jpg" alt="RTOimg" style="width:50%">
+<img align="justify" src="Real_Time_Oscilloscope_img.PNG" alt="RTOimg" style="width:50%">
 
 # Components
 * ESP32 WeMos LOLIN D32
