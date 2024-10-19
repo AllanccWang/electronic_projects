@@ -5,6 +5,7 @@ In this practice, we build a simple real time oscilloscope. We take a simple LED
 <img align="justify" src="Real_Time_Oscilloscope_circuit.jpg" alt="RTOc" style="width:50%">
 
 the waveform plot
+
 <img align="justify" src="Real_Time_Oscilloscope_img.PNG" alt="RTOimg" style="width:50%">
 
 # Components
