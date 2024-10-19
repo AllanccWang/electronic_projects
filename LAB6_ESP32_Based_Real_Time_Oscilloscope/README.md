@@ -28,7 +28,7 @@ the waveform plot
 # Code
 * GPIO5 is constant voltage source, and GPIO25 is used for analog read.
 * Pyserial module is to communicate over the serial port, drawnow update the plot in real time and Matplotlib generate plots
-* python code is [here](LAB6_ESP32_Based_Real_Time_Oscilloscope/RealTimePlot.py)
+* python code is [here](RealTimePlot.py)
 
 ```C++
 int GPIO_pin = 5; //GPIO5 as voltage source
