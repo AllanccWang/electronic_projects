@@ -12,5 +12,29 @@ in this practice, ESP32 is configured as Wifi station. When the ESP32 is success
 IDE: Arduino IDE
 
 # Code
-* use GPIO5 as a power source
-* push switcher to see if RC circuit lights up LED, and LED light will fade as capacitor discharging
+* import <WiFi.h> module, and set up network name and password
+* print the connection information: working mode, Channel, SSID, Passphrase, and BSSID
+
+```C++
+#include <WiFi.h> 
+const char *ssid     = "********"; //ssid: network name
+const char *password = "********"; //pasword：network password
+
+void setup() {
+  Serial.begin(115200);
+  WiFi.begin(ssid, password);
+  Serial.println(String("Connecting to ")+ssid);
+  
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(800);
+    Serial.print(".");
+  }
+  Serial.print("\nIP address: ");
+  Serial.println(WiFi.localIP());
+  Serial.println("WiFi status:");
+  WiFi.printDiag(Serial); //connection information: working mode, Channel, SSID, Passphrase, and BSSID
+}
+  
+void loop() {
+}
+```
