@@ -15,7 +15,7 @@ refer to : [LINK](https://www.electronics-tutorials.ws/combination/r-2r-dac.html
 * [Tinkercad](https://www.tinkercad.com/) : Arduino UNO
 
 # Simulation
-* [**_R-2R resistive ladder_**](https://www.tinkercad.com/things/jH8VCkvaYPu-r-2r-resistive-ladder)
+* [**_R-2R resistive ladder_**](https://www.tinkercad.com/things/jH8VCkvaYPu-r-2r-resistive-ladder?sharecode=AEccUuROgGydeU4dj-gq7G51oSW0cNwep27xJXzuztE)
 
 # Code
 ```C++
