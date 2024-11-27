@@ -24,6 +24,10 @@ reference: [**here**](https://sites.google.com/view/rayarduino/esp32-web-server_
 see the illustrated picture above
 
 # Code
+* ssid is the string for network name, and password string is for wifi password
+* as connecting wifi server successfully, it will shows the IP address such as 192.168.0.113
+* 
+
 ```C++
 #include <WiFi.h>
 
