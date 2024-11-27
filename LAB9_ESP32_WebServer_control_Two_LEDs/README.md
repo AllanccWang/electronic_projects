@@ -14,5 +14,5 @@ reference: [**here**](https://sites.google.com/view/rayarduino/esp32-web-server_
 
 |      | both LEDs off | one LED on, and one off | both LEDs on |
 | ---- | ------------- | ----------------------- | ------------ |
-| circuit |  <img align="justify" src="practice-web-server_two_leds_00.jpg" alt="pra_Web2LED_00" style="width:70%">  | <img align="justify" src="practice-web-server_two_leds_10.jpg" alt="pra_Web2LED_10" style="width:70%"> | <img align="justify" src="practice-web-server_two_leds_11.jpg" alt="pra_Web2LED_11" style="width:70%"> |
-| browser |   1640  | $2.624*10^{-19}$ | $4.285*10^{14}$ | $6.123*10^{-34}$ | 7.5% |
+| Demo | <img align="justify" src="practice-web-server_two_leds_00.jpg" alt="pra_Web2LED_00" style="width:70%"> | <img align="justify" src="practice-web-server_two_leds_10.jpg" alt="pra_Web2LED_10" style="width:50%"> | <img align="justify" src="practice-web-server_two_leds_11.jpg" alt="pra_Web2LED_11" style="width:50%"> |
+| Browser | <img align="justify" src="html-web-server_two_leds_00.jpg" alt="html_Web2LED_00" style="width:70%">  | <img align="justify" src="html-web-server_two_leds_10.jpg" alt="html_Web2LED_10" style="width:70%"> | <img align="justify" src="html-web-server_two_leds_11.jpg" alt="html_Web2LED_11" style="width:70%"> |
