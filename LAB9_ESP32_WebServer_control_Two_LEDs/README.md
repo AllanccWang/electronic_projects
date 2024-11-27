@@ -14,5 +14,5 @@ reference: [**here**](https://sites.google.com/view/rayarduino/esp32-web-server_
 
 |      | both LEDs off | one LED on, and one off | both LEDs on |
 | ---- | ------------- | ----------------------- | ------------ |
-| circuit |   1660  | $2.656*10^{-19}$ | $4.285*10^{14}$ | $6.198*10^{-34}$ | 6.4% |
+| circuit |  <img align="justify" src="practice-web-server_two_leds_00.jpg" alt="pra_Web2LED_00" style="width:70%">  | <img align="justify" src="practice-web-server_two_leds_10.jpg" alt="pra_Web2LED_10" style="width:70%"> | <img align="justify" src="practice-web-server_two_leds_11.jpg" alt="pra_Web2LED_11" style="width:70%"> |
 | browser |   1640  | $2.624*10^{-19}$ | $4.285*10^{14}$ | $6.123*10^{-34}$ | 7.5% |
