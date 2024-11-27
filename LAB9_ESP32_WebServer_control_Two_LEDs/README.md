@@ -1,6 +1,7 @@
 # ESP32 as Web server to control two LEDs
 
 configure ESP32 as a web server and use browser to control two LEDs with GPIO32 and GPIO33
+
 reference: [**here**](https://sites.google.com/view/rayarduino/esp32-web-server_two_leds)
 
 |      | both LEDs off | one LED on, and one off | both LEDs on |
