@@ -26,7 +26,7 @@ see the illustrated picture above
 # Code
 * follows the instructions on reference
 * for <AsyncTCP.h> and <ESPAsyncWebServer.h> library, it shows error due to compatibility. Then changing the esp32 version to 2.0.17 in "Boards Manager", it will fix the error.
-* since changing the esp32 version, the ledcAttachChannel function is also required modified, by using ledcSetup and ledcAttachPin function instead.
+* since changing the esp32 version, the ledcAttachChannel function is also required modified, by using ledcSetup and ledcAttachPin function instead. also be aware the ledcWrite function, it's ledcWrite(channel,duty)
 
 ```C++
 #include <WiFi.h>
