@@ -7,7 +7,7 @@ reference: [**here**](https://randomnerdtutorials.com/esp32-web-server-slider-pw
 |      | PWM signal : 0 | PWM signal : 115 |
 | ---- | ------------- | ----------------- |
 | Demo | <img align="justify" src="practice_web-server_slider_LED0.jpg" alt="pra_SliderLED_0" style="width:60%"> | <img align="justify" src="practice_web-server_slider_LED115.jpg" alt="pra_SliderLED_115" style="width:60%"> |
-| Browser | <img align="justify" src="web-server_slider_LED0.jpg" alt="SliderLED_0" style="width:60%">  | <img align="justify" src="pra_SliderLED_115.jpg" alt="SliderLED_115" style="width:60%"> |
+| Browser | <img align="justify" src="web-server_slider_LED0.jpg" alt="SliderLED_0" style="width:60%">  | <img align="justify" src="web-server_slider_LED115.jpg" alt="SliderLED_115" style="width:60%"> |
 
 # Components
 * ESP32 WeMos LOLIN D32
