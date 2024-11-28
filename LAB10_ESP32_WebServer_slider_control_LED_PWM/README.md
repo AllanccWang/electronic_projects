@@ -24,6 +24,9 @@ reference: [**here**](https://randomnerdtutorials.com/esp32-web-server-slider-pw
 see the illustrated picture above
 
 # Code
+* follows the instructions on reference
+* for <AsyncTCP.h> and <ESPAsyncWebServer.h> library, it shows error due to compatibility. Then changing the esp32 version to 2.0.17 in "Boards Manager", it will fix the error.
+* since chaning the esp32 version, the ledcAttachChannel function is also required modified, by using ledcSetup and ledcAttachPin function instead.
 
 ```C++
 #include <WiFi.h>
