@@ -13,7 +13,9 @@ read ESP32 internal temperature sensor, and display value on OLED
 * IDE: Arduino IDE with lib, "Adafruit_GFX.h" and "Adafruit_SSD1306.h"
 
 # Wiring
+
 <img align="justify" src="Read_temperature_with_OLED_display.jpg" alt="ReadTemp_OLED" style="width:80%">
+
 | OLED | description | ESP32 |
 | ---- | ----------- | --- |
 | VCC  | power | 3V |
