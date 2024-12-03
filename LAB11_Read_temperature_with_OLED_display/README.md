@@ -14,9 +14,9 @@ read ESP32 internal temperature sensor, and display value on OLED
 
 # Wiring
 <img align="justify" src="Read_temperature_with_OLED_display.jpg" alt="ReadTemp_OLED" style="width:80%">
-|      |  OLED | description | pin |
+| OLED | description | ESP32 |
 | ---- | ----------- | --- |
-| VCC |  | |
-| GND | | |
-| SDA | | |
-| SCL | | |
+| VCC  | power | 3V |
+| GND  | ground | GND |
+| SDA  | I2C data | 21 |
+| SCL  | I2C clock | 22 |
