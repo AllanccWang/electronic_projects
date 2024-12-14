@@ -26,6 +26,10 @@ practice on APDS9960 Proximity, Light & RGB Sensor [**Datasheet**](https://cdn.s
 | SCL  | I2C clock | 22 |
 
 # Code
+* include the header file for APDS9960
+* initialize the sensor, and enable APDS9960 Proximity, Light & RGB Sensor
+* define pin for proximity checking
+* use a object to check the output on Serial Monitor
 
 ```C++
 #include <SparkFun_APDS9960.h>
