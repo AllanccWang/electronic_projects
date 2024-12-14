@@ -90,4 +90,25 @@ void loop() {
   }
   delay(1000);
 }
+
+//-------------------------------------------------------------//
+//Serial Monitor display as red pen is close to sensor
+/*
+proximity value: 46
+proximity value: 45
+proximity value: 51
+proximity value: 255
+enviroment light: 1606  red light: 429  green light: 508  blue light: 599
+proximity value: 255
+enviroment light: 1579  red light: 422  green light: 500  blue light: 587
+proximity value: 255
+enviroment light: 1591  red light: 424  green light: 502  blue light: 591
+proximity value: 255
+enviroment light: 1542  red light: 403  green light: 484  blue light: 577
+proximity value: 106
+proximity value: 129
+proximity value: 234
+proximity value: 255
+enviroment light: 732  red light: 208  green light: 262  blue light: 272
+*/
 ```
