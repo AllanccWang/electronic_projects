@@ -2,6 +2,11 @@
 
 practice on APDS9960 Proximity, Light & RGB Sensor
 
+| object | near | far |
+| ------ | ---- | --- |
+| | <img align="justify" src="practice_on_APDS9960_sensor_p.jpg" alt="APDS9960_far" style="width:70%"> | <img align="justify" src="practice_on_APDS9960_sensor.jpg" alt="APDS9960_near" style="width:70%"> |
+
+
 # Components
 * ESP32 WeMos LOLIN D32
 * USB
