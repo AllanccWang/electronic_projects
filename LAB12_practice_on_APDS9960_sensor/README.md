@@ -1,7 +1,6 @@
 # Practice on APDS9960 Sensor
 
-practice on APDS9960 Proximity, Light & RGB Sensor
-
+practice on APDS9960 Proximity, Light & RGB Sensor [**Datasheet**](https://cdn.sparkfun.com/assets/learn_tutorials/3/2/1/Avago-APDS-9960-datasheet.pdf)
 | object | near | far |
 | ------ | ---- | --- |
 | | <img align="justify" src="practice_on_APDS9960_sensor_p.jpg" alt="APDS9960_far" style="width:70%"> | <img align="justify" src="practice_on_APDS9960_sensor.jpg" alt="APDS9960_near" style="width:70%"> |
