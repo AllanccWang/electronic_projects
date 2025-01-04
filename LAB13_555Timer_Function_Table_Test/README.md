@@ -85,4 +85,11 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
 }
+/*output pin value */
+/*
+Condition 1; output pin: 0
+Condition 2; output pin: 1
+Condition 3; output pin: 0
+Condition 4; output pin: 0
+*/
 ```
