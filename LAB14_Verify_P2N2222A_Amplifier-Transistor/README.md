@@ -24,6 +24,7 @@ in this practice, it implement the common-emitter digital switch test on P2N2222
 
 # Code
 This program tests the P2N2222A transistor's functionality as a common-emitter digital switch. It drives the base HIGH and LOW and verifies that the collector voltage switches accordingly.
+
 Test Flow:
 1. Initialize GPIO pins.
 2. Test OFF State: Drive Base LOW, expect Collector to be HIGH.
