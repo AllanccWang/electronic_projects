@@ -21,6 +21,7 @@ in this practice, it implement the common-emitter digital switch test on P2N2222
 | Collector | parallel connected | GPIO34 |
 | Base | 2.2K ohm serial connected | GPIO25 |
 | Emitter | ground | GND |
+<img align="justify" src="P2N2222A_Transistor_Wiring.jpg" alt="P2N2222A_ESP32_Wiring" style="width:80%">
 
 # Code
 This program tests the P2N2222A transistor's functionality as a common-emitter digital switch. It drives the base HIGH and LOW and verifies that the collector voltage switches accordingly. We also make sure the test can actually detect a failure! A test that always passes is not a useful test, please refer to "Results_test_condition_Pass_and_fail.txt" file for failure condition and explanation.
