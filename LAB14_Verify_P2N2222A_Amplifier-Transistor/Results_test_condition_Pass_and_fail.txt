@@ -1,0 +1,58 @@
+P2N2222A_switching_test.cpp
+
+PASS Condition
+------------------------------------
+Step 1: Testing OFF State (Cutoff)
+Action: Driving Base pin LOW to turn transistor OFF.
+  -> Expected Collector State: HIGH (1)
+  -> Observed Collector State: 1
+Result: PASS - Transistor is correctly in cutoff state.
+
+Step 2: Testing ON State (Saturation)
+Action: Driving Base pin HIGH to turn transistor ON.
+  -> Expected Collector State: LOW (0)
+  -> Observed Collector State: 0
+Result: PASS - Transistor is correctly in saturation state.
+------------------------------------
+
+Below cases are to make sure the test can actually detect a failure! A test that always passes is not a useful test.
+Method 1: Force the "ON State" Test to Fail
+output:
+------------------------------------
+Step 1: Testing OFF State (Cutoff)
+Action: Driving Base pin LOW to turn transistor OFF.
+  -> Expected Collector State: HIGH (1)
+  -> Observed Collector State: 1
+Result: PASS - Transistor is correctly in cutoff state.
+
+Step 2: Testing ON State (Saturation)
+Action: Driving Base pin HIGH to turn transistor ON.
+  -> Expected Collector State: LOW (0)
+  -> Observed Collector State: 1
+Result: FAIL - Transistor is not in saturation state. Collector should be LOW.
+------------------------------------
+Why it fails:
+With the base disconnected, no current can flow from the GPIO pin to turn the transistor on.
+When the code drives the BASE_PIN HIGH, the transistor will remain OFF.
+As a result, the collector will never be pulled LOW; it will stay HIGH, connected to VCC through the collector resistor.
+
+
+Method 2: Force the "OFF State" Test to Fail
+output:
+------------------------------------
+Step 1: Testing OFF State (Cutoff)
+Action: Driving Base pin LOW to turn transistor OFF.
+  -> Expected Collector State: HIGH (1)
+  -> Observed Collector State: 0
+Result: FAIL - Transistor is not in cutoff state. Collector should be HIGH.
+
+Step 2: Testing ON State (Saturation)
+Action: Driving Base pin HIGH to turn transistor ON.
+  -> Expected Collector State: LOW (0)
+  -> Observed Collector State: 0
+Result: PASS - Transistor is correctly in saturation state.
+------------------------------------
+Why it fails:
+This physically holds the collector's voltage at ground potential (LOW).
+When the code runs the "OFF State" test, it turns the transistor off, but the jumper wire overrides this and keeps the collector pin at 0V.
+The software expects to read a HIGH state but will read LOW instead.
