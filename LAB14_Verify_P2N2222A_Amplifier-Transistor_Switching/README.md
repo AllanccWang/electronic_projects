@@ -1,5 +1,5 @@
- # Verify P2N2222A Amplifier Transistor
-in this practice, it implement the common-emitter digital switch test on P2N2222A Amplifier Transistor with ESP32, for the device specification and application circuit, please refer to P2N2222A datasheet.
+ # Verify common-emitter digital switch test on P2N2222A Amplifier Transistor
+in this practice, it implement the common-emitter digital switch test on P2N2222A with ESP32, for the device specification and application circuit, please refer to P2N2222A datasheet.
 
 # Components
 * ESP32 WeMos LOLIN D32
