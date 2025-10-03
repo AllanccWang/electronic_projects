@@ -72,4 +72,9 @@ Result: FAIL - Collector voltage not within expected HIGH range.
 ------------------------------------
 Expected behavior: ADC pin floats, voltage is unpredictable.
 ADC result: May read random values due to noise or crosstalk.
-Code detects: Both ON and OFF states fall outside expected voltage ranges → FAIL
+- Why ON State Sometimes Passes, Sometimes Fails?
+Sometimes the ADC reads 0.000V → interpreted as LOW → PASS.
+Sometimes it reads ~0.4–0.5V due to noise, leakage, or internal capacitance → interpreted as not LOW enough → FAIL.
+- Why OFF State Always Fails
+No pull-up resistor or valid VCC path → collector voltage floats.
+ADC reads 0.000V or near-zero → interpreted as LOW → FAIL.
