@@ -1,0 +1,75 @@
+PASS Condition
+------------------------------------
+[ON State Test]
+Collector Voltage (ON): 0.000 V
+Result: PASS - Collector is LOW as expected.
+
+[OFF State Test]
+Collector Voltage (OFF): 3.300 V
+Result: PASS - Collector is HIGH as expected.
+------------------------------------
+
+
+
+Below cases are to make sure the test can actually detect a failure! A test that always passes is not a useful test.
+
+Method 1: Base Disconnected (Simulate ON State Failure)
+How to simulate: Physically disconnect the wire from GPIO25 to the base resistor.
+output:
+------------------------------------
+[ON State Test]
+Collector Voltage (ON): 3.300 V
+Result: FAIL - Collector voltage not within expected LOW range.
+
+[OFF State Test]
+Collector Voltage (OFF): 3.300 V
+Result: PASS - Collector is HIGH as expected.
+------------------------------------
+Why it fails:
+Expected behavior: When BASE is driven HIGH, no current flows → transistor remains OFF.
+ADC result: Collector voltage stays HIGH (~3.3V).
+Code detects: ON state voltage > 0.4V → FAIL
+
+
+
+Method 2: Collector Forced to GND (Simulate OFF State Failure)
+How to simulate: Connect a jumper wire from collector (Pin 1) directly to GND.
+output:
+------------------------------------
+[ON State Test]
+Collector Voltage (ON): 0.000 V
+Result: PASS - Collector is LOW as expected.
+
+[OFF State Test]
+Collector Voltage (OFF): 0.000 V
+Result: FAIL - Collector voltage not within expected HIGH range.
+------------------------------------
+Expected behavior: Even when transistor is OFF, collector is stuck LOW.
+ADC result: Collector voltage ~0V during OFF state.
+Code detects: OFF state voltage < 3.0V → FAIL
+
+
+
+Method 3: Floating Collector (Both States Fail)
+How to simulate: Disconnect GPIO34 from the collector.
+output:
+------------------------------------
+[ON State Test]
+Collector Voltage (ON): 0.580 V
+Result: FAIL - Collector voltage not within expected LOW range.
+
+[OFF State Test]
+Collector Voltage (OFF): 0.392 V
+Result: FAIL - Collector voltage not within expected HIGH range.
+
+[ON State Test]
+Collector Voltage (ON): 0.218 V
+Result: PASS - Collector is LOW as expected.
+
+[OFF State Test]
+Collector Voltage (OFF): 0.111 V
+Result: FAIL - Collector voltage not within expected HIGH range.
+------------------------------------
+Expected behavior: ADC pin floats, voltage is unpredictable.
+ADC result: May read random values due to noise or crosstalk.
+Code detects: Both ON and OFF states fall outside expected voltage ranges → FAIL
