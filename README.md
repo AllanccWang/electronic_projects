@@ -1,7 +1,7 @@
 # electronic_projects
 implement the circuit with microcontroller
 
-# 🔧 Project Index (Sorted by LAB Number)
+# Project Index (Sorted by LAB Number)
 - [LAB1_RC_circuit/](LAB1_RC_circuit/)
 - [LAB2_Analog_Input_Voltage/](LAB2_Analog_Input_Voltage/)
 - [LAB3_binary_display_with_LED/](LAB3_binary_display_with_LED/)
