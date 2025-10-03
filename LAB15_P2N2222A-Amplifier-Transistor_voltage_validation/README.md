@@ -34,6 +34,9 @@ Test Flow:
 3. Test ON State: Drive Base HIGH, measure Collector voltage via ADC, expect ≈ 0.0–0.4V.
 4. Validate voltage ranges and log PASS/FAIL results.
 5. Repeat the test cycle at defined intervals.
+6. 
+Please refer the [_P2N2222A_voltage_validation_Results_Pass_and_fail_]() for results.
+
 ```C++
 const int BASE_PIN = 25;        // Output to transistor base
 const int COLLECTOR_ADC = 34;   // ADC input from transistor collector
