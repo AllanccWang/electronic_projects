@@ -5,7 +5,6 @@ To verify the switching behavior of the P2N2222A transistor by measuring its col
 * The transistor enters cutoff when the base is driven LOW, resulting in a collector voltage near VCC (≈3.3V).
 * The test logic can detect failure conditions, such as disconnected base, grounded collector, or floating inputs.
 This complements the LAB14 digital switch test by adding analog precision and robustness to your diagnostic framework.
-<img align="justify" src="[LAB14_Verify_P2N2222A_Amplifier-Transistor_Switching/P2N2222A_Transistor_Wiring.jpg](https://github.com/AllanccWang/electronic_projects/blob/be0a2c0213b3476932db2d1263b9f268e6106e26/LAB14_Verify_P2N2222A_Amplifier-Transistor_Switching/P2N2222A_Transistor_Wiring.jpg)" alt="P2N2222A_ESP32_Wiring_02" style="width:80%">
 
 # Components
 * ESP32 WeMos LOLIN D32
@@ -20,13 +19,13 @@ This complements the LAB14 digital switch test by adding analog precision and ro
 * IDE: Arduino IDE
 
 # Wiring
-
 | P2N2222A | description | ESP32 |
 | ---- | ----------- | --- |
 | Collector | 220 ohm serial connected to power | 3.3V |
 | Collector | parallel connected | GPIO34 |
 | Base | 2.2K ohm serial connected | GPIO25 |
 | Emitter | ground | GND |
+<img align="justify" src="https://github.com/AllanccWang/electronic_projects/blob/be0a2c0213b3476932db2d1263b9f268e6106e26/LAB14_Verify_P2N2222A_Amplifier-Transistor_Switching/P2N2222A_Transistor_Wiring.jpg" alt="P2N2222A_ESP32_Wiring_02" style="width:80%">
 
 # Code
 Test Flow:
