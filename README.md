@@ -19,6 +19,7 @@ Explore the labs below, sorted by progression and topic.
 - [LAB13_555Timer_Function_Table_Test/](LAB13_555Timer_Function_Table_Test/)
 - [LAB14_Verify_P2N2222A_Amplifier-Transistor_Switching/](LAB14_Verify_P2N2222A_Amplifier-Transistor_Switching/)
 - [LAB15_P2N2222A-Amplifier-Transistor_voltage_validation/](LAB15_P2N2222A-Amplifier-Transistor_voltage_validation/)
+- [LAB16_NE555P_Astable_Test_validation/](LAB16_NE555P_Astable_Test_validation/)
 
 # pinout of micorcontroller, ESP32
 <img align="justify" src="ESP32-WeMos-LOLIN-D32-pinout.jpg" alt="CG" style="width:80%">
