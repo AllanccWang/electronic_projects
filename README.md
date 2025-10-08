@@ -1,7 +1,9 @@
 # electronic_projects
-implement the circuit with microcontroller
+This repository showcases a series of hands-on electronics experiments and microcontroller-based projects, primarily built around the ESP32 platform. Each lab explores a unique concept—from analog signal processing and sensor integration to web-controlled interfaces and transistor diagnostics. Designed for clarity, modularity, and reuse, these projects serve as both a personal learning archive and a collaborative resource for makers, educators, and engineers.
 
-# 🔧 Project Index (Sorted by LAB Number)
+Explore the labs below, sorted by progression and topic.
+
+# Project Index (Sorted by LAB Number)
 - [LAB1_RC_circuit/](LAB1_RC_circuit/)
 - [LAB2_Analog_Input_Voltage/](LAB2_Analog_Input_Voltage/)
 - [LAB3_binary_display_with_LED/](LAB3_binary_display_with_LED/)
