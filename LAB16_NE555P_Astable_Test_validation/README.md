@@ -15,6 +15,7 @@ The test also includes force-to-fail scenarios to confirm the robustness of the 
 * 1 unit of 9.1Kohm resistor
 * 1 unit of 1µF capacitor
 * 1 unit of 0.01µF capacitor
+
 Optional for Force-to-Fail Testing
 * Alternate Capacitors (e.g., 0.1 µF, 10 µF)
 * Alternate Resistors (e.g., 100 kΩ, 1 MΩ)
@@ -24,13 +25,23 @@ Optional for Force-to-Fail Testing
 
 # Wiring
 
-| P2N2222A | description | ESP32 |
+| NE555P Timer | description | ESP32 |
 | ---- | ----------- | --- |
-| Collector | 220 ohm serial connected to power | 3.3V |
-| Collector | parallel connected | GPIO34 |
-| Base | 2.2K ohm serial connected | GPIO25 |
-| Emitter | ground | GND |
-<img align="justify" src="P2N2222A_Transistor_Wiring.jpg" alt="P2N2222A_ESP32_Wiring" style="width:80%">
+| VCC (Pin 8) | 5.0V | VUSB |
+| GND (Pin 1) | GND | GND |
+| OUT (Pin 3) | frequency measurement | GPIO34 |
+| RESET (Pin 4) | enabling/disabling the timer | GPIO26 |
+
+Passive Components for ~54.5 Hz Oscillation
+- **RA (Resistor):** 8.2kΩ, connected between VCC and DISCHARGE (Pin 7).
+- **RB (Resistor):** 9.1kΩ, connected between DISCHARGE (Pin 7) and THRESHOLD (Pin 6).
+- **C1 (Capacitor):** 1µF, connected between THRESHOLD (Pin 6) and GND.
+- **C2 (Capacitor):** 0.01µF, connected between CONTROL (Pin 5) and GND for stability.
+
+Notes
+- THRESHOLD (Pin 6) and TRIGGER (Pin 2) must be connected together.
+- The circuit is designed to generate a continuous square wave when RESET is held HIGH.
+<img align="justify" src="NE555P_Astable_Test_Circuit.jpg" alt="NE555P_Astable_Test_Wiring" style="width:80%">
 
 # Code
 This program tests the P2N2222A transistor's functionality as a common-emitter digital switch. It drives the base HIGH and LOW and verifies that the collector voltage switches accordingly. We also make sure the test can actually detect a failure! A test that always passes is not a useful test, please refer to "Results_test_condition_Pass_and_fail.txt" file for failure condition and explanation.
