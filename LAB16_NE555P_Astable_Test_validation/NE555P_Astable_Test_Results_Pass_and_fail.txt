@@ -1,0 +1,71 @@
+NE555P_Astable_Test.cpp
+
+PASS Condition
+------------------------------------
+Starting new measurement cycle...
+  -> High Duration: 13156 us
+  -> Low Duration:  6951 us
+  -> Total Period:  20107 us
+  -> Measured Frequency: 49.73 Hz
+Result: PASS - Frequency is within the expected range.
+------------------------------------
+
+------------------------------------
+Starting new measurement cycle...
+  -> High Duration: 13135 us
+  -> Low Duration:  6956 us
+  -> Total Period:  20091 us
+  -> Measured Frequency: 49.77 Hz
+Result: PASS - Frequency is within the expected range.
+------------------------------------
+
+Below cases are to make sure the test can actually detect a failure! A test that always passes is not a useful test.
+Method 1: Force the RESET Pin LOW
+output:
+------------------------------------
+Starting new measurement cycle...
+Measurement FAIL: pulseIn() timed out. Check wiring or component values.
+Is the OUT pin oscillating?
+------------------------------------
+Why it fails:
+The output will always be LOW, and the frequency cannot be measured
+
+
+Method 2: Disconnect Trigger/Threshold
+output:
+------------------------------------
+Starting new measurement cycle...
+Measurement FAIL: pulseIn() timed out. Check wiring or component values.
+Is the OUT pin oscillating?
+------------------------------------
+Why it fails:
+In NE555 astable mode, if TRIG/THRESH is not correctly connected to the RC network, the output will get stuck and will not oscillate.
+
+
+Method 3: Incorrect Timing Component (Capacitor)
+output:
+------------------------------------
+Starting new measurement cycle...
+  -> High Duration: 125 us
+  -> Low Duration:  66 us
+  -> Total Period:  191 us
+  -> Measured Frequency: 5235.60 Hz
+Result: FAIL - Frequency is outside the expected range.
+------------------------------------
+Why it fails:
+The frequency is inversely proportional to the capacitance (f ∝ 1/C)。
+Reducing the capacitor from 1µF to 0.01µF — a 100-fold decrease—will cause the oscillation frequency to increase dramatically, by approximately 100 times.
+
+Method 4: Incorrect Resistor Value
+output:
+------------------------------------
+Starting new measurement cycle...
+  -> High Duration: 777981 us
+  -> Low Duration:  7006 us
+  -> Total Period:  784987 us
+  -> Measured Frequency: 1.27 Hz
+Result: FAIL - Frequency is outside the expected range.
+------------------------------------
+Why it fails:
+The frequency is inversely proportional to the resistance (f ∝ 1/R)。
+Increasing RA from 8.2kΩ to 1MΩ significantly extends the capacitor’s charging time, resulting in a sharp drop in oscillation frequency.
