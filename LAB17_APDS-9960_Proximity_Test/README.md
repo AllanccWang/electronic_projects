@@ -54,7 +54,7 @@ Optional for Force-to-Fail Testing
 4. Follow the prompts:
    - Place an object near the sensor → proximity value rises above threshold.
    - Remove the object → proximity value falls below threshold.
-5. For **force-to-fail cases**, deliberately miswire as described below and confirm that the test detects the failure. Results are [_here_](LAB17_APDS-9960_Proximity_Test/APDS-9960_Proximity_Test_Results.txt)
+5. For **force-to-fail cases**, deliberately miswire as described below and confirm that the test detects the failure. Results are [_here_](./APDS-9960_Proximity_Test_Results.txt)
    - no object near to sensor
    - Violate the minimum VIH of 2.31V on the SDA line
    - Undervoltage Lockout (UVLO)-Drop Vcc below 2.4V(with 2 series diodes) to force the internal UVLO circuit to trigger.
