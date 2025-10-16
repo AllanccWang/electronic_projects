@@ -1,0 +1,61 @@
+# Pass Condition
+--- Test Cycle Finished ---
+Restarting in 10 seconds...
+
+[TEST STEP 1/2] Please place an object within 5cm of the sensor...
+.
+-> PASS: Object detected!
+   Proximity Value: 255
+
+[TEST STEP 2/2] Please remove the object from the sensor...
+....................
+-> PASS: Object removed!
+   Proximity Value: 29
+
+--- Test Cycle Finished ---
+
+
+##### Force-to-fail case #####
+
+
+# Case 1: no object near to sensor
+## Output
+--- Test Cycle Finished ---
+Restarting in 10 seconds...
+
+[TEST STEP 1/2] Please place an object within 5cm of the sensor...
+........................................
+-> FAIL: Test timed out waiting for object.
+
+
+
+# Case 2: Violate the minimum VIH of 2.31V on the SDA line
+## Output
+--- Test Cycle Finished ---
+Restarting in 10 seconds...
+
+[TEST STEP 1/2] Please place an object within 5cm of the sensor...
+E (677516) i2c.master: I2C hardware timeout detected
+E (677516) i2c.master: s_i2c_synchronous_transaction(945): I2C transaction failed
+E (677522) i2c.master: i2c_master_multi_buffer_transmit(1214): I2C transaction failed
+
+## Reason: 
+The failure is caused by an electrical principle known as the RC Time Constant (τ): τ=R×C
+R (Resistance): This is the high-value of the ESP32's internal weak pull-up resistor (≈50kΩ). This value is fixed and already borderline.
+C (Capacitance): This is the total capacitance of the bus, which is now dominated by the added capacitor (e.g., 1 nF to 10 nF).
+
+By increasing C, we dramatically increase the time constant (τ). This makes the signal rise from LOW to HIGH very slowly.
+The I²C protocol requires the SDA line to reach the VIH level (2.31V for the APDS-9960) within a specific time window determined by the SCL clock speed.
+The slow rise time causes the SDA voltage to violate this time constraint, leading to data corruption and communication failure
+
+
+
+# Case 3: Undervoltage Lockout (UVLO)-Drop Vcc below 2.4V(with 2 series diodes) to force the internal UVLO circuit to trigger.
+## Output
+--- APDS-9960 Proximity Function Test ---
+Initializing...
+E (20) i2c.master: I2C hardware NACK detected
+
+## Reason:
+The ESP32 successfully booted and started the code.
+But the sensor's internal circuitry, including the I²C controller, is disabled by the UVLO circuit. It will not respond to I²C commands.
