@@ -15,3 +15,4 @@
 - [LAB14_Verify_P2N2222A_Amplifier-Transistor_Switching/](LAB14_Verify_P2N2222A_Amplifier-Transistor_Switching/)
 - [LAB15_P2N2222A-Amplifier-Transistor_voltage_validation/](LAB15_P2N2222A-Amplifier-Transistor_voltage_validation/)
 - [LAB16_NE555P_Astable_Test_validation/](LAB16_NE555P_Astable_Test_validation/)
+- [LAB17_APDS-9960_Proximity_Test/](LAB17_APDS-9960_Proximity_Test/)
