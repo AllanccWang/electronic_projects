@@ -16,6 +16,7 @@ The validation includes **force-to-fail wiring scenarios** to ensure the test lo
 
 Optional for Force-to-Fail Testing
 - 2 x 1N4001 diodes
+- 1 x 0.01uF capacitor
 
 ---
 
