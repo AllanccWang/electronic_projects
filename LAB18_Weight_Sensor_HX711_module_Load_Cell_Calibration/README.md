@@ -1,6 +1,6 @@
 # HX711 module Load Cell Calibration (Weight Sensor Validation)
 
-This step validates the **weight sensing functionality** using the HX711 Load Cell Amplifier module by establishing a correct calibration factor and zeroing the scale. This ensures the PoC can accurately measure object weight for subsequent classification rules.
+This step validates the **weight sensing functionality** using the HX711 Load Cell Amplifier module by establishing a correct calibration factor and zeroing the scale. This ensures the HX711 can accurately measure object weight for subsequent classification rules.
 
 The final calibration factor of **50.4** was determined through trial-and-error to achieve high accuracy ($\approx 9.1 \text{ g}$ for a $9.2 \text{ g}$ standard weight).
 
@@ -9,7 +9,7 @@ The final calibration factor of **50.4** was determined through trial-and-error 
 # Components
 
   - **ESP32** Control Board
-  - **HX711** Load Cell Amplifier Module
+  - **HX711** Load Cell Amplifier Module as below image
   - **Load Cell** (Strain Gauge)
   - Jumper wires
   - Permanent Weighing Platform (wood or plastic)
