@@ -6,7 +6,7 @@ This module implements **sensor fusion** and **edge decision-making** on the ESP
 - 🎨 **APDS-9960 Color Sensor** (for RGB + proximity)
 
 The system performs real-time classification of objects into three categories using a robust decision tree. Special attention is given to overcoming APDS-9960’s limitations with dark or blue objects by applying **ratio-based color discrimination**.
-
+Code is [_here_](./Sensor_Fusion_by_using_HX711_and_APDS-9960_Modules.py)
 ---
 
 # Sensor Fusion Inputs & Stabilization
@@ -33,7 +33,7 @@ These constants govern the classification logic and can be tuned for calibration
 
 ---
 
-## 🧭 Edge Decision Tree Logic
+# Edge Decision Tree Logic
 
 The decision engine operates in `STATE_DECISION_READY` using a strict **IF–THEN–ELSE** priority structure. Once a condition is met, classification is finalized and no further checks are made.
 
@@ -43,10 +43,13 @@ The decision engine operates in `STATE_DECISION_READY` using a strict **IF–THE
 | **2** | `finalWeight < 50.0` AND `red_light > green_light × 1.2` AND `red_light > blue_light` | **CLASS B (Light Red)** | Light Red Items Zone |
 | **3** | *Else* | **CLASS C (Light Other)** | Residual Zone (includes dark/blue items) |
 
+# Setup and Results
 Setup
+
 <img align="justify" src="./Sensor_Fusion_by_using_HX711_and_APDS-9960_Modules_SETUP.jpg" alt="Sensor_Fusion_by_using_HX711_and_APDS-9960_Modules_SETUP_IMG" style="width:60%">
 
 Red Object
+
 <img align="justify" src="./Sensor_Fusion_by_using_HX711_and_APDS-9960_Modules_RED_OBJECT.jpg" alt="Sensor_Fusion_by_using_HX711_and_APDS-9960_Modules_RED_OBJECT_IMG" style="width:60%">
 ```txt
 OUTPUT for different objects
