@@ -1,9 +1,3 @@
-// -----------------------------------------------------------------
-// Edge-AI Smart Sorting PoC: Step 2 (Final Sensor + Classification Logic - COMPILE FIX)
-// Focus: Corrected usage of global variables (red_light, green_light, blue_light) 
-//        in the decision logic state.
-// -----------------------------------------------------------------
-
 // --- 1. HX711 (Load Cell Module) ---
 #include "HX711_ADC.h"
 const int HX711_DAT_PIN = 33; 
@@ -12,13 +6,13 @@ HX711_ADC LoadCell(HX711_DAT_PIN, HX711_CLK_PIN);
 const float CALIBRATION_FACTOR = 50.4; 
 
 
-// --- 2. APDS-9960 色彩與接近偵測模組 ---
+// --- 2. APDS-9960 Color and Proximity Sensor Module ---
 #include <Wire.h> 
 #include <SparkFun_APDS9960.h>
 
 SparkFun_APDS9960 apds = SparkFun_APDS9960();
 
-// --- 3. OLED 螢幕模組 (I2C) ---
+// --- 3. OLED Screen Module (I2C) ---
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 #define OLED_RESET -1         
@@ -26,7 +20,7 @@ SparkFun_APDS9960 apds = SparkFun_APDS9960();
 #define SCREEN_HEIGHT 64      
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET); 
 
-// --- 全域變數用於感測器讀數與結果 ---
+// --- Global variables for sensor readings and results ---
 uint16_t ambient_light = 0;
 uint16_t red_light = 0;
 uint16_t green_light = 0;
@@ -38,7 +32,7 @@ float finalWeight = 0.0;
 String classificationResult = "PENDING"; 
 
 
-// --- 狀態機定義 ---
+// --- State Machine Definition ---
 enum TestState {
   STATE_IDLE,             
   STATE_WEIGHT_READING,   
@@ -48,16 +42,16 @@ enum TestState {
 };
 TestState currentState = STATE_IDLE; 
 
-// --- 閾值定義 ---
+// --- Threshold Definitions ---
 const float WEIGHT_THRESHOLD = 2.0;       
 const uint8_t PROXIMITY_COLOR_THRESHOLD = 50; 
 
-// 分類閾值
+// Classification Thresholds
 const float CLASSIFY_WEIGHT_THRESHOLD = 50.0; 
 const float RED_RATIO_THRESHOLD = 1.2;       
 
 
-// --- 數據穩定變數 (核心) ---
+// --- Data Stability Variables (Core) ---
 float weightAccumulator = 0.0;
 int weightReadingsTaken = 0;
 const int WEIGHT_STABILITY_COUNT = 15; 
@@ -80,36 +74,36 @@ void setup() {
   Serial.begin(115200);
   Serial.println("--- PoC System Initialization ---");
 
-  // I2C 初始化 (GPIO 21/22)
+  // I2C Initialization (GPIO 21/22)
   Wire.begin(21, 22); 
 
-  // OLED 初始化
+  // OLED Initialization
   if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { 
-    Serial.println(F("OLED 啟動失敗!")); while (true); 
+    Serial.println(F("OLED Initialization Failed!")); while (true); 
   } else {
     display.clearDisplay(); display.setTextSize(1); display.setTextColor(SSD1306_WHITE); display.setCursor(0,0);
     display.println("OLED Ready!"); display.display();
   }
   
-  // --- APDS-9960 初始化 (最終穩定配置：只使用環境光) ---
+  // --- APDS-9960 Initialization (Final stable config: Only Ambient Light is used) ---
   if (apds.init()) {
     
     if (apds.enableLightSensor(false)) { 
       if (!apds.setAmbientLightGain(APDS9960_GCONF4)) { 
-        Serial.println("Warning: 無法設定 Ambient Light Gain.");
+        Serial.println("Warning: Could not set Ambient Light Gain.");
       }
     }
     
     if (!apds.enableProximitySensor(false)) {
-         Serial.println("Warning: 無法啟用 Proximity Sensor.");
+         Serial.println("Warning: Could not enable Proximity Sensor.");
     }
     
   } else {
-    Serial.println("APDS-9960 啟動失敗!");
+    Serial.println("APDS-9960 Initialization Failed!");
   }
 
 
-  // HX711 初始化與 Tare
+  // HX711 Initialization and Tare
   LoadCell.begin(); LoadCell.start(200); LoadCell.setSamplesInUse(1); LoadCell.powerUp();     
   Serial.println("Performing Tare (Zeroing)...");
   LoadCell.tare(); 
@@ -123,7 +117,7 @@ void setup() {
 
 void loop() {
   
-  // 1. 讀取所有感測器數據 (同步讀取)
+  // 1. Read all sensor data (Synchronous Read)
   if (LoadCell.update()) {
     currentWeight = LoadCell.getData() / CALIBRATION_FACTOR;
   }
@@ -133,7 +127,7 @@ void loop() {
   apds.readBlueLight(blue_light);
   apds.readProximity(proximity_value); 
   
-  // 2. 狀態機邏輯處理
+  // 2. State Machine Logic Processing
   switch (currentState) {
     
     case STATE_IDLE:
@@ -202,7 +196,7 @@ void loop() {
               uint16_t finalGreen = greenAccumulator / COLOR_STABILITY_COUNT;
               uint16_t finalBlue = blueAccumulator / COLOR_STABILITY_COUNT;
 
-              // 將平均值寫入全域變數 (red_light, green_light, blue_light)
+              // Write the average values to the global variables (red_light, green_light, blue_light)
               red_light = finalRed;
               green_light = finalGreen;
               blue_light = finalBlue;
@@ -222,17 +216,17 @@ void loop() {
       
     case STATE_DECISION_READY:
       
-      // 【修正點】：使用全域變數 red_light, green_light, blue_light
+      // [FIX]: Use the global variables red_light, green_light, blue_light
       if (classificationResult == "PENDING") {
           
           if (finalWeight >= CLASSIFY_WEIGHT_THRESHOLD) {
               classificationResult = "CLASS A (Heavy)";
           } 
-          // R 必須比 G 高 1.2 倍，且 R 必須比 B 高
+          // R must be 1.2 times higher than G, and R must be higher than B
           else if (red_light > (green_light * RED_RATIO_THRESHOLD) && red_light > blue_light) {
               classificationResult = "CLASS B (Light Red)";
           } 
-          // 剩下的都歸類為 C
+          // The rest are classified as C
           else {
               classificationResult = "CLASS C (Light Other)";
           }
@@ -241,7 +235,7 @@ void loop() {
           Serial.println("--- Waiting for object removal for next cycle ---");
       }
       
-      // 等待物體完全移開，然後重置到 IDLE
+      // Wait for object to be completely removed, then reset to IDLE
       if (proximity_value < 30 && currentWeight < 1.0) {
         Serial.println("\n--- Cycle Complete. System Resetting. ---\n");
         currentState = STATE_IDLE; 
@@ -251,7 +245,7 @@ void loop() {
       break;
   }
   
-  // 3. 顯示數據 (OLED Screen) 
+  // 3. Display Data (OLED Screen) 
   display.clearDisplay();
   display.setCursor(0, 0);
   display.print("STATUS: "); 
