@@ -53,7 +53,8 @@ Setup
 Red Object
 
 <img align="justify" src="./Sensor_Fusion_by_using_HX711_and_APDS-9960_Modules_RED_OBJECT.jpg" alt="Sensor_Fusion_by_using_HX711_and_APDS-9960_Modules_RED_OBJECT_IMG" style="width:60%">
-```txt
+
+```text
 OUTPUT for different objects
 
 --- CLASSIFICATION DATA READY ---
