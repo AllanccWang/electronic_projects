@@ -23,6 +23,7 @@ Explore the labs below, sorted by progression and topic.
 - [LAB16_NE555P_Astable_Test_validation/](LAB16_NE555P_Astable_Test_validation/)
 - [LAB17_APDS-9960_Proximity_Test/](LAB17_APDS-9960_Proximity_Test/)
 - [LAB18_Weight_Sensor_HX711_module_Load_Cell_Calibration/](LAB18_Weight_Sensor_HX711_module_Load_Cell_Calibration/)
+- [LAB19_Color_Sensor_and_OLED_Display_Integration_Test/](LAB19_Color_Sensor_and_OLED_Display_Integration_Test/)
 
 # Micorcontroller, ESP32
 <img align="justify" src="ESP32-WeMos-LOLIN-D32-pinout.jpg" alt="CG" style="width:80%">
