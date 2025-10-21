@@ -6,7 +6,9 @@ This module implements **sensor fusion** and **edge decision-making** on the ESP
 - 🎨 **APDS-9960 Color Sensor** (for RGB + proximity)
 
 The system performs real-time classification of objects into three categories using a robust decision tree. Special attention is given to overcoming APDS-9960’s limitations with dark or blue objects by applying **ratio-based color discrimination**.
+
 Code is [_here_](./Sensor_Fusion_by_using_HX711_and_APDS-9960_Modules.py)
+
 ---
 
 # Sensor Fusion Inputs & Stabilization
