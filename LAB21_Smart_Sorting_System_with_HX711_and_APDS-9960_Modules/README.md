@@ -1,4 +1,4 @@
-# Edge-AI Smart Sorting PoC System
+# Edge-AI Smart Sorting System
 
 This project developed a Proof-of-Concept for an **Edge-AI** object sorting system. The system's objective is to use multiple sensors to **collect data in real-time** (weight and color), perform **immediate classification** on the microcontroller (ESP32), and drive a servo motor to sort objects into three predefined categories.
 
@@ -36,7 +36,7 @@ The biggest challenge during development was achieving reliable and precise cont
 
 # Project Outcome
 
-After successful debugging and validation, all technical requirements for the PoC system were met:
+After successful debugging and validation, all technical requirements for the system were met:
 
 - **Sensing Stability** is confirmed for both weight and color data acquisition.
 - **Actuation Reliability** is achieved, with the SG90 servo motor successfully rotating to **0°**, **90°**, and **180°** based on classification results, and reliably homing.
