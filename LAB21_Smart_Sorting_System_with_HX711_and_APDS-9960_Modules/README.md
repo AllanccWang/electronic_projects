@@ -2,7 +2,7 @@
 
 This project developed a Proof-of-Concept for an **Edge-AI** object sorting system. The system's objective is to use multiple sensors to **collect data in real-time** (weight and color), perform **immediate classification** on the microcontroller (ESP32), and drive a servo motor to sort objects into three predefined categories.
 
-## Code is [_here_](./Smart_Sorting_System_with_HX711_and_APDS-9960.py)
+## Code is [_here_](./Smart_Sorting_System_with_HX711_and_APDS-9960.cpp)
 
 # Hardware and Core Components
 
