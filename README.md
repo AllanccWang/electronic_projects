@@ -25,6 +25,7 @@ Explore the labs below, sorted by progression and topic.
 - [LAB18_Weight_Sensor_HX711_module_Load_Cell_Calibration/](LAB18_Weight_Sensor_HX711_module_Load_Cell_Calibration/)
 - [LAB19_Color_Sensor_and_OLED_Display_Integration_Test/](LAB19_Color_Sensor_and_OLED_Display_Integration_Test/)
 - [LAB20_Sensor_Fusion_by_using_HX711_and_APDS-9960_Modules/](LAB20_Sensor_Fusion_by_using_HX711_and_APDS-9960_Modules/)
+- [LAB21_Smart_Sorting_System_with_HX711_and_APDS-9960_Modules/](LAB21_Smart_Sorting_System_with_HX711_and_APDS-9960_Modules/)
 
 # Micorcontroller, ESP32
 <img align="justify" src="ESP32-WeMos-LOLIN-D32-pinout.jpg" alt="CG" style="width:80%">
