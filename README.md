@@ -27,6 +27,7 @@ Explore the labs below, sorted by progression and topic.
 - [LAB20_Sensor_Fusion_by_using_HX711_and_APDS-9960_Modules/](LAB20_Sensor_Fusion_by_using_HX711_and_APDS-9960_Modules/)
 - [LAB21_Smart_Sorting_System_with_HX711_and_APDS-9960_Modules/](LAB21_Smart_Sorting_System_with_HX711_and_APDS-9960_Modules/)
 - [LAB22_Simple_Magnetic_Control_Light_using_a_Reed_Switch/](LAB22_Simple_Magnetic_Control_Light_using_a_Reed_Switch/)
+- [LAB23_STM32-ESP32_Dual_MCU_Communication_Setup/](LAB23_STM32-ESP32_Dual_MCU_Communication_Setup/)
 
 # Micorcontroller, ESP32
 <img align="justify" src="ESP32-WeMos-LOLIN-D32-pinout.jpg" alt="CG" style="width:80%">
