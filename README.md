@@ -30,7 +30,7 @@ Explore the labs below, sorted by progression and topic.
 - [LAB23_STM32-ESP32_Dual_MCU_Communication_Setup/](LAB23_STM32-ESP32_Dual_MCU_Communication_Setup/)
 - [LAB24_STM32F103_DMA_Data_Acquisition_and_Analysis/](LAB24_STM32F103_DMA_Data_Acquisition_and_Analysis/)
 
-# Micorcontroller, ESP32
+# Microcontroller, ESP32
 <img align="justify" src="ESP32-WeMos-LOLIN-D32-pinout.jpg" alt="CG" style="width:80%">
 
 # specs
@@ -72,7 +72,7 @@ Explore the labs below, sorted by progression and topic.
 * Battery management
   * Connector for 3.7v battery (like 18650).
 
-# Micorcontroller, STM32F103C8
+# Microcontroller, STM32F103C8
 <img align="justify" src="STM32F103C8_pinout.png" alt="STM32F103C8_pinout_IMG" style="width:80%">
 
 # specs
