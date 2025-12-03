@@ -1,5 +1,5 @@
 # About
-This repository showcases a series of hands-on electronics experiments and microcontroller-based projects, primarily built around the ESP32 platform. Each lab explores a unique concept—from analog signal processing and sensor integration to web-controlled interfaces and transistor diagnostics. Designed for clarity, modularity, and reuse, these projects serve as both a personal learning archive and a collaborative resource for makers, educators, and engineers.
+This repository showcases a series of hands-on electronics experiments and microcontroller-based projects, primarily built around the MCU platform. Each lab explores a unique concept—from analog signal processing and sensor integration to web-controlled interfaces and transistor diagnostics. Designed for clarity, modularity, and reuse, these projects serve as both a personal learning archive and a collaborative resource for makers, educators, and engineers.
 
 Explore the labs below, sorted by progression and topic.
 
@@ -28,6 +28,7 @@ Explore the labs below, sorted by progression and topic.
 - [LAB21_Smart_Sorting_System_with_HX711_and_APDS-9960_Modules/](LAB21_Smart_Sorting_System_with_HX711_and_APDS-9960_Modules/)
 - [LAB22_Simple_Magnetic_Control_Light_using_a_Reed_Switch/](LAB22_Simple_Magnetic_Control_Light_using_a_Reed_Switch/)
 - [LAB23_STM32-ESP32_Dual_MCU_Communication_Setup/](LAB23_STM32-ESP32_Dual_MCU_Communication_Setup/)
+- [LAB24_STM32F103_DMA_Data_Acquisition_and_Analysis/](LAB24_STM32F103_DMA_Data_Acquisition_and_Analysis/)
 
 # Micorcontroller, ESP32
 <img align="justify" src="ESP32-WeMos-LOLIN-D32-pinout.jpg" alt="CG" style="width:80%">
@@ -70,3 +71,48 @@ Explore the labs below, sorted by progression and topic.
   * Wake up from GPIO interrupt, timer, ADC measurements, capacitive touch sensor interrupt
 * Battery management
   * Connector for 3.7v battery (like 18650).
+
+# Micorcontroller, STM32F103C8
+<img align="justify" src="STM32F103C8_pinout.png" alt="STM32F103C8_pinout_IMG" style="width:80%">
+
+# specs
+* ARM®32-bit Cortex®-M3 CPU Core
+  * 72 MHz maximum frequency,1.25 DMIPS/MHz (Dhrystone 2.1) performance at 0 wait state memory access
+  * Single-cycle multiplication and hardware division
+* Memories
+  * 64 or 128 Kbytes of Flash memory
+  * 20 Kbytes of SRAM
+* Clock, reset and supply management
+  * 2.0 to 3.6 V application supply and I/Os
+  * POR, PDR, and programmable voltage detector (PVD)
+  * 4-to-16 MHz crystal oscillator
+  * Internal 8 MHz factory-trimmed RC
+  * Internal 40 kHz RC
+  * PLL for CPU clock
+  * 32 kHz oscillator for RTC with calibration
+* Low-power
+  * Sleep, Stop and Standby modes
+  * VBAT supply for RTC and backup registers
+* 2 x 12-bit, 1 μs A/D converters (up to 16 channels)
+  * Conversion range: 0 to 3.6 V
+  * Dual-sample and hold capability
+  * Temperature sensor
+* DMA
+  * 7-channel DMA controller
+  * Peripherals supported: timers, ADC, SPIs, I2Cs and USARTs
+* Up to 80 fast I/O ports
+  * 26/37/51/80 I/Os, all mappable on 16 external interrupt vectors and almost all 5 V-tolerant
+* Debug mode
+  * Serial wire debug (SWD) & JTAG interfaces
+* 7 timers
+  * Three 16-bit timers, each with up to 4 IC/OC/PWM or pulse counter and quadrature (incremental) encoder input
+  * 16-bit, motor control PWM timer with dead-time generation and emergency stop
+  * 2 watchdog timers (Independent and Window)
+  * SysTick timer 24-bit down-counter
+* Up to 9 communication interfaces
+* Up to 2 x I2C interfaces (SMBus/PMBus)
+* Up to 3 USARTs (ISO 7816 interface, LIN, IrDA capability, modem control)
+* Up to 2 SPIs (18 Mbit/s)
+* CAN interface (2.0B Active)
+* USB 2.0 full-speed interface
+* CRC calculation unit, 96-bit unique ID
