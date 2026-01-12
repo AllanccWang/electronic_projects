@@ -30,6 +30,7 @@ Explore the labs below, sorted by progression and topic.
 - [LAB23_STM32-ESP32_Dual_MCU_Communication_Setup/](LAB23_STM32-ESP32_Dual_MCU_Communication_Setup/)
 - [LAB24_STM32F103_DMA_Data_Acquisition_and_Analysis/](LAB24_STM32F103_DMA_Data_Acquisition_and_Analysis/)
 - [LAB25_STM32F103_DMA-Based_Analog_Signal_Acquisition_and_UART_Output_Practice/](LAB25_STM32F103_DMA-Based_Analog_Signal_Acquisition_and_UART_Output_Practice/)
+- [LAB26_Electronics_Circuit_System_Thinking_Experiment_with_NE555_RC_Oscillator/](LAB26_Electronics_Circuit_System_Thinking_Experiment_with_NE555_RC_Oscillator/)
 
 # Microcontroller, ESP32
 <img align="justify" src="ESP32-WeMos-LOLIN-D32-pinout.jpg" alt="CG" style="width:80%">
