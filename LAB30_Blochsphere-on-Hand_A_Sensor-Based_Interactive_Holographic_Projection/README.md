@@ -2,7 +2,7 @@
 
 In quantum mechanics, the state of a qubit is not simply **0** or **1** — it can be represented as a **unit vector on the surface of the Bloch sphere**.
 
-**DEMO**: ![Watch the demo]<video src="./V_Blochsphere-on-Hand_A_Sensor-Based_Interactive_Holographic_Projection.mp4" controls="controls" style="max-width: 730px;">
+**DEMO**: <video src="./V_Blochsphere-on-Hand_A_Sensor-Based_Interactive_Holographic_Projection.mp4" controls="controls" style="max-width: 730px;">
 </video>
 
 ### 1. Coordinate Mapping
