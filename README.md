@@ -34,6 +34,7 @@ Explore the labs below, sorted by progression and topic.
 - [LAB27_Angle-Pressure_Chain_Reaction_for_Monitoring_Tilting_Structure/](LAB27_Angle-Pressure_Chain_Reaction_for_Monitoring_Tilting_Structure/)
 - [LAB28_Quantum-Scale_Stochastic_Resonance-QSR_Simulator/](LAB28_Quantum-Scale_Stochastic_Resonance-QSR_Simulator/)
 - [LAB29_Analog_Quantum_Dispersive_Readout_Simulator/](LAB29_Analog_Quantum_Dispersive_Readout_Simulator/)
+- [LAB30_Blochsphere-on-Hand_A_Sensor-Based_Interactive_Holographic_Projection/](LAB30_Blochsphere-on-Hand_A_Sensor-Based_Interactive_Holographic_Projection/)
 
 # Microcontroller, ESP32
 <img align="justify" src="ESP32-WeMos-LOLIN-D32-pinout.jpg" alt="CG" style="width:80%">
