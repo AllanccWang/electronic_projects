@@ -35,6 +35,7 @@ Explore the labs below, sorted by progression and topic.
 - [LAB28_Quantum-Scale_Stochastic_Resonance-QSR_Simulator/](LAB28_Quantum-Scale_Stochastic_Resonance-QSR_Simulator/)
 - [LAB29_Analog_Quantum_Dispersive_Readout_Simulator/](LAB29_Analog_Quantum_Dispersive_Readout_Simulator/)
 - [LAB30_Blochsphere-on-Hand_A_Sensor-Based_Interactive_Holographic_Projection/](LAB30_Blochsphere-on-Hand_A_Sensor-Based_Interactive_Holographic_Projection/)
+- [LAB31_Overshoot_and_Ringing_Detector_with_STM32_as_Oscilloscope/](LAB31_Overshoot_and_Ringing_Detector_with_STM32_as_Oscilloscope/)
 
 # Microcontroller, ESP32
 <img align="justify" src="ESP32-WeMos-LOLIN-D32-pinout.jpg" alt="CG" style="width:80%">
