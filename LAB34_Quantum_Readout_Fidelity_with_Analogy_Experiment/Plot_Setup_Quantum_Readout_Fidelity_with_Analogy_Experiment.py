@@ -100,9 +100,9 @@ def main():
             
             # Final IQ & Fidelity
             amps = [np.sqrt(I**2 + Q**2) for I, Q in all_iq[-32:]]  # last 32 IQs
-            noise_rms = np.std([np.sqrt(I**2 + Q**2) for I, Q in all_iq[:64]])  # 前64個作雜訊
+            noise_rms = np.std([np.sqrt(I**2 + Q**2) for I, Q in all_iq[:64]])
             threshold = noise_rms * 3.0
-            amps = [np.sqrt(I**2 + Q**2) for I, Q in all_iq[-32:]]  # 後32個作訊號
+            amps = [np.sqrt(I**2 + Q**2) for I, Q in all_iq[-32:]]
             fidelity = np.sum(np.array(amps) > threshold) / len(amps) * 100 if amps else 0
 
             print(f"\n📊 Trial {trial_num} Complete!")
