@@ -239,4 +239,4 @@ void loop() {
 |---------|--------|
 | Idle | <img align="justify" src="IDLE_Edge_Impulse_ESP32-MPU6050.jpg" alt="IDLE_Edge_Impulse_ESP32-MPU6050_IMG" style="width:70%"> |
 | Drinking(tilted) | <img align="justify" src="Tilted_Edge_Impulse_ESP32-MPU6050.jpg" alt="Tilted_Edge_Impulse_ESP32-MPU6050_IMG" style="width:70%">  |
-| Stirring | Video  |
+| Stirring | https://github.com/user-attachments/assets/2efbaef4-07cc-4411-9780-ca5aee263239 |
