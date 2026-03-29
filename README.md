@@ -39,6 +39,7 @@ Explore the labs below, sorted by progression and topic.
 - [LAB32_ESP32+STM32_RLC_Qubit_Analog_Lab/](LAB32_ESP32+STM32_RLC_Qubit_Analog_Lab/)
 - [LAB33_A_Number_Guessing_Hangman_Game_with_ESP32_keypad_and_LED/](LAB33_A_Number_Guessing_Hangman_Game_with_ESP32_keypad_and_LED/)
 - [LAB34_Quantum_Readout_Fidelity_with_Analogy_Experiment/](LAB34_Quantum_Readout_Fidelity_with_Analogy_Experiment/)
+- [LAB35_Action_Recognizer_Based_on_Edge_Impulse_with_ESP32_and_MPU6050/](LAB35_Action_Recognizer_Based_on_Edge_Impulse_with_ESP32_and_MPU6050/)
 
 # Microcontroller, ESP32
 <img align="justify" src="ESP32-WeMos-LOLIN-D32-pinout.jpg" alt="CG" style="width:80%">
