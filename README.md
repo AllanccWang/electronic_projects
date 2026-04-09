@@ -40,6 +40,7 @@ Explore the labs below, sorted by progression and topic.
 - [LAB33_A_Number_Guessing_Hangman_Game_with_ESP32_keypad_and_LED/](LAB33_A_Number_Guessing_Hangman_Game_with_ESP32_keypad_and_LED/)
 - [LAB34_Quantum_Readout_Fidelity_with_Analogy_Experiment/](LAB34_Quantum_Readout_Fidelity_with_Analogy_Experiment/)
 - [LAB35_Action_Recognizer_Based_on_Edge_Impulse_with_ESP32_and_MPU6050/](LAB35_Action_Recognizer_Based_on_Edge_Impulse_with_ESP32_and_MPU6050/)
+- [LAB36_Smart-Load_Adaptive_Regulator-An_Edge-Impulse-Based_Load_Adaptive_Calibration_System/](LAB36_Smart-Load_Adaptive_Regulator-An_Edge-Impulse-Based_Load_Adaptive_Calibration_System/)
 
 # Microcontroller, ESP32
 <img align="justify" src="ESP32-WeMos-LOLIN-D32-pinout.jpg" alt="CG" style="width:80%">
