@@ -11,8 +11,8 @@ void setup() {
 
 void loop() {
   // 因為 LOLIN D32 是低電位點亮，LOW 反而是「亮」，HIGH 是「滅」
-  // digitalWrite(LED_PIN, HIGH);   // 點亮藍色 LED
-  // Serial.println("LED 狀態: 亮 (LOW)");
+  digitalWrite(LED_PIN, HIGH);   // 點亮藍色 LED
+  Serial.println("LED 狀態: 亮 (LOW)");
   delay(300);                   // 閃快一點 (0.3秒) 比較明顯
 
   digitalWrite(LED_PIN, LOW);  // 熄滅 LED
