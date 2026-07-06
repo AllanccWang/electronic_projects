@@ -41,6 +41,7 @@ Explore the labs below, sorted by progression and topic.
 - [LAB34_Quantum_Readout_Fidelity_with_Analogy_Experiment/](LAB34_Quantum_Readout_Fidelity_with_Analogy_Experiment/)
 - [LAB35_Action_Recognizer_Based_on_Edge_Impulse_with_ESP32_and_MPU6050/](LAB35_Action_Recognizer_Based_on_Edge_Impulse_with_ESP32_and_MPU6050/)
 - [LAB36_Smart-Load_Adaptive_Regulator-An_Edge-Impulse-Based_Load_Adaptive_Calibration_System/](LAB36_Smart-Load_Adaptive_Regulator-An_Edge-Impulse-Based_Load_Adaptive_Calibration_System/)
+- [LAB37_微型光學對準平台/](LAB37_微型光學對準平台/)
 
 # Microcontroller, ESP32
 <img align="justify" src="ESP32-WeMos-LOLIN-D32-pinout.jpg" alt="CG" style="width:80%">
