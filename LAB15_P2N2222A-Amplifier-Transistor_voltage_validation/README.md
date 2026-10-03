@@ -35,7 +35,7 @@ Test Flow:
 4. Validate voltage ranges and log PASS/FAIL results.
 5. Repeat the test cycle at defined intervals.
 
-Please refer the [_P2N2222A_voltage_validation_Results_Pass_and_fail_](https://github.com/AllanccWang/electronic_projects/blob/4fc298cad8bde9c6be9c640f2d5b02a52998e878/LAB15_P2N2222A-Amplifier-Transistor_voltage_validation/P2N2222A_voltage_validation_Results_Pass_and_fail.txt) for results.
+Please refer the [_P2N2222A_voltage_validation_Results_Pass_and_fail_](P2N2222A_voltage_validation_Results_Pass_and_fail.txt) for results.
 
 ```C++
 const int BASE_PIN = 25;        // Output to transistor base
