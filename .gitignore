@@ -1,0 +1,3 @@
+# Local index-generation helper scripts
+generate_index.sh
+update_readme_index.py
