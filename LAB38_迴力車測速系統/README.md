@@ -1,5 +1,6 @@
 # 結果展示
 
+https://github.com/user-attachments/assets/d6e1f5af-a816-40ea-b923-d982f28812f0
 
 ---
 
@@ -392,3 +393,11 @@ print("=== ESP32 LOLIN D32 測速系統已啟動 (手動 LED 模式) ===")
 ---
 
 # 四、 Racing Competition
+
+
+https://github.com/user-attachments/assets/d15a34de-b5b8-4c0c-97b3-0d499e5ec0c4
+
+
+
+https://github.com/user-attachments/assets/fd1b4cef-f2aa-43d7-957b-eb6b973fdf1c
+
