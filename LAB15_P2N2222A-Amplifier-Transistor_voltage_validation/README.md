@@ -25,7 +25,7 @@ This complements the LAB14 digital switch test by adding analog precision and ro
 | Collector | parallel connected | GPIO34 |
 | Base | 2.2K ohm serial connected | GPIO25 |
 | Emitter | ground | GND |
-<img align="justify" src="https://github.com/AllanccWang/electronic_projects/blob/be0a2c0213b3476932db2d1263b9f268e6106e26/LAB14_Verify_P2N2222A_Amplifier-Transistor_Switching/P2N2222A_Transistor_Wiring.jpg" alt="P2N2222A_ESP32_Wiring_02" style="width:80%">
+<img align="justify" src="./P2N2222A_Transistor_Wiring.jpg" alt="P2N2222A_ESP32_Wiring_02" style="width:80%">
 
 # Code
 Test Flow:
