@@ -31,8 +31,8 @@ https://github.com/user-attachments/assets/d6e1f5af-a816-40ea-b923-d982f28812f0
 | **10K 可變電阻 (WH148)** | **Pin 1 (左腳)** | 麵包板 **紅色 (+) 導軌 (3.3V)** | 門檻電位上端 |
 | | **Pin 3 (右腳)** | 麵包板 **藍色 (-) 導軌 (GND)** | 門檻電位下端 |
 | **光敏電阻分壓節點** | 光敏電阻 腳 1 | 麵包板 **紅色 (+) 導軌 (3.3V)** | 感測光強 |
-| *(麵包板第 15 行)* | 光敏電阻 腳 2 | 麵包板 **第 15 行** | 連接分壓點 |
-| | 10kΩ 固定電阻 腳 1 | 麵包板 **第 15 行** | 連接分壓點 |
+| *(2nd 麵包板)* | 光敏電阻 腳 2 | 2nd 麵包板上 | 連接分壓點 |
+| | 10kΩ 固定電阻 腳 1 | 2nd 麵包板上 | 連接分壓點 |
 | | 10kΩ 固定電阻 腳 2 | 麵包板 **藍色 (-) 導軌 (GND)** | 下拉接地 |
 
 #### ④ OLED 螢幕模組 (I2C 通訊)
@@ -68,13 +68,13 @@ _FLAG_WRITE_NO_RESPONSE = const(0x0008)
 _FLAG_WRITE = const(0x0008)
 _FLAG_NOTIFY = const(0x0010)
 
-_UART_UUID = bluetooth.UUID("6E400001-B5A3-F393-E0A9-E50E24DCCA9E")
+_UART_UUID = bluetooth.UUID("xxxxxxxx-xxxx-xxxx-xxxx-E50xxxxxCA9E")
 _UART_TX = (
-    bluetooth.UUID("6E400003-B5A3-F393-E0A9-E50E24DCCA9E"),
+    bluetooth.UUID("xxxxxxxx-xxxx-xxxx-xxxx-E50xxxxxCA9E"),
     _FLAG_READ | _FLAG_NOTIFY,
 )
 _UART_RX = (
-    bluetooth.UUID("6E400002-B5A3-F393-E0A9-E50E24DCCA9E"),
+    bluetooth.UUID("xxxxxxxx-xxxx-xxxx-xxxx-E50xxxxxCA9E"),
     _FLAG_WRITE | _FLAG_WRITE_NO_RESPONSE,
 )
 _UART_SERVICE = (
@@ -394,10 +394,15 @@ print("=== ESP32 LOLIN D32 測速系統已啟動 (手動 LED 模式) ===")
 
 # 四、 Racing Competition
 
+Terminal Display:
+<img align="justify" src="./media/IMG_20260928_212318.jpg" alt="red_car_speed_testing_IMG_20260928_212318" style="width:50%">
 
 https://github.com/user-attachments/assets/d15a34de-b5b8-4c0c-97b3-0d499e5ec0c4
 
+---
 
+Terminal Display:
+<img align="justify" src="./media/IMG_20260928_212012.jpg" alt="orange_car_speed_testing_IMG_20260928_212012" style="width:50%">
 
 https://github.com/user-attachments/assets/fd1b4cef-f2aa-43d7-957b-eb6b973fdf1c
 
